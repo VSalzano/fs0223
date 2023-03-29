@@ -20,8 +20,7 @@ h1 {
 }
 
 a {
-    color: #215847;
-    font-weight: bold;
+    color: #367e83;
 }
 
 main h3 {
@@ -66,7 +65,7 @@ main ul {
     background-color: rgba(218, 157, 88, 0.192);
     border-top: solid 1px;
     border-color: rgb(218, 157, 88);
-    color: #215847;
+    color: #32725e;
 }
 
 .subtitle p {
