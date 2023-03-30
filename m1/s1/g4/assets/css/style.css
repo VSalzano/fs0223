@@ -8,10 +8,6 @@ body {
     background-attachment: fixed;
 }
 
-ul {
-    list-style-type: none;
-  }
-
 /* HEADER */
 
 #main-header {
@@ -40,6 +36,10 @@ ul {
     line-height: 1.8;
 }
 
+#main-menu ul {
+    list-style: none;
+  }
+
 #main-menu ul li a{
     color: white;
     font-weight: 600;
@@ -48,12 +48,98 @@ ul {
 
 /* MAIN */
 
+main {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 /* ELEMENTI NEL MAIN - ARTICLE */
 
+main article h2 {
+    font-weight: 700;
+    font-size: 1.8em;
+    padding-top:50px;
+    line-height: 1.5;
+}
+
+main article {
+    padding: 20px;
+}
+
+.subtitle {
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+
+main article p {
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+main article span {
+    color: rgb(114, 5, 59);
+    font-weight: bold;
+}
+
+main article a{
+    color:rgb(15, 128, 128);
+    font-weight: bold;
+}
+
+main article ul {
+    margin-bottom:20px;
+    padding-left:30px;
+}
+
+main article ol {
+    margin-bottom:20px;
+    padding-left:30px;
+}
+
+.video-player {
+    text-align: center;
+}
+
 /* TABELLE */
+
+main article table {
+    margin-bottom: 20px;
+}
+
+.table {
+    border-bottom: solid 1px rgb(0, 89, 255);
+}
+
+table caption{
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.table th {
+    line-height: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.171);
+    background-color: rgba(0, 89, 255, 0.767) ;
+    color: white;
+}
+
+.table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table tr:nth-last-child(even){
+    background-color: rgba(197, 197, 197, 0.295);
+}
 
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
+
+
 
 /* FOOTER */
