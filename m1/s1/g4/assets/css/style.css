@@ -206,9 +206,7 @@ aside h3 {
 
 footer {
     background-image: linear-gradient(1deg, #054e64, #036863);
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
     padding:20px;
     color: white;
 }
