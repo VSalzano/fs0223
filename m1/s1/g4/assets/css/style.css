@@ -138,7 +138,62 @@ table caption{
 
 /* FORM */
 
+.newsletter-box form button {
+    background-color:rgba(0, 89, 255, 0.767) ;
+    color: white;
+    border:none;
+}
+
 /* ELEMENTI NELL' ASIDE */
+
+.newsletter-box {
+    background-color: rgba(197, 197, 197, 0.781);
+    margin: 20px;
+    padding: 20px;
+}
+
+.newsletter-box h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newsletter-box p{
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+aside h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.related {
+    background-color: rgba(197, 197, 197, 0.781);
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.related a{
+    color:rgb(15, 128, 128);
+    font-weight: bold;
+}
+
+.related p{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.related .date{
+    margin-top: 30px;
+    text-align: right;
+}
+
 
 
 
