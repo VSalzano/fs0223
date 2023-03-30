@@ -96,6 +96,12 @@ main article ul {
     padding-left:30px;
 }
 
+.code-tag {
+    background-color: rgb(182, 182, 182);
+    border-radius: 10%;
+    border: 1px solid grey;
+}
+
 main article ol {
     margin-bottom:20px;
     padding-left:30px;
