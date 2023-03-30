@@ -209,6 +209,7 @@ footer {
     margin: 20px;
     padding:20px;
     color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.445);
 }
 
 .copyright {
@@ -222,4 +223,5 @@ footer p{
 footer a {
     color: rgb(177, 55, 177);
     font-weight: bolder;
+    
 }
