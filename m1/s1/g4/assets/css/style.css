@@ -12,7 +12,7 @@ body {
 
 #main-header {
     margin: 20px;
-    background-image: linear-gradient(1deg, #045074, #5d96c9);
+    background-image: linear-gradient(1deg, #054e64, #59a7a3);
     text-align: center;
     padding: 30px;
     padding-top: 60px;
@@ -52,6 +52,8 @@ main {
     background-color: white;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom:20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.445);
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -198,3 +200,25 @@ aside h3 {
 
 
 /* FOOTER */
+
+footer {
+    background-image: linear-gradient(1deg, #054e64, #036863);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:20px;
+    color: white;
+}
+
+.copyright {
+    margin-bottom:20px;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a {
+    color: rgb(177, 55, 177);
+    font-weight: bolder;
+}
