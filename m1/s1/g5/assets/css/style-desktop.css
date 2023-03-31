@@ -128,8 +128,8 @@ main h3{
 }
 
 aside article {
-    border: 1px solid;
     width: 30%;
+    height: fit-content;
     text-align: center;
     border-radius: 0 0 10px 10px;
     border: 2px solid rgba(182, 182, 127, 0.37);
