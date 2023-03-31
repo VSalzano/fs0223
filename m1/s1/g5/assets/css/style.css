@@ -22,6 +22,13 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 h3 {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
@@ -69,17 +76,73 @@ h3 {
 /* stili del main */
 
 main {
-    padding: 30px;
     padding-top:40px;
     padding-bottom:40px;
 }
 
 .main-content {
     margin-bottom:30px;
+    padding: 30px;
 }
 
 .rounded-img {
     border-radius:100%;
     width:60%;
     height:auto;
+}
+
+.evidence-box {
+    background-color: #e22d0e;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cit {
+   font-style: italic;
+   margin-bottom: 30px;
+}
+
+/* stili dell'aside */
+
+aside {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside article {
+    width:90%;
+    border: 1px solid rgba(182, 182, 127, 0.37);
+    border-radius: 0% 0% 10px 10px;
+    margin-bottom: 40px;
+}
+
+aside article h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside article p {
+    margin-bottom: 40px;
+}
+
+aside article img {
+    width:100%;
+}
+
+/* stili del footer */
+
+footer {
+    background-color: #25a2c3;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer hr {
+    width: 40%;
 }
