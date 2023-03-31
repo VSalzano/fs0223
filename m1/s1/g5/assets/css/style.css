@@ -1,7 +1,85 @@
 /* Your styles here */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
 
+/* impostazioni generiche*/
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #393d41;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: #25a2c3;
+}
+
+/* stili dell'header */
+
+#logo-container {
+    background-color: black;
+    padding: 20px;
+}
+
+#logo-container img {
+    width: 40%;
+    height: auto;
+}
+
+
+#header-container {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:30px;
+}
+
+#header-container p {
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+#header-container button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f04c2f;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom:10px;
+    border-radius: 5px;
+    border:none;
+    color: white;
+}
+
+/* stili del main */
+
+main {
+    padding: 30px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.main-content {
+    margin-bottom:30px;
+}
+
+.rounded-img {
+    border-radius:100%;
+    width:60%;
+    height:auto;
 }
