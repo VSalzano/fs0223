@@ -137,7 +137,10 @@ aside article img {
 footer {
     background-color: #25a2c3;
     color: white;
+    padding-top:30px;
+    padding-bottom:50px;
 }
+
 
 footer a {
     color: white;
@@ -145,4 +148,6 @@ footer a {
 
 footer hr {
     width: 40%;
+    margin-top:20px;
+    margin-bottom:20px;
 }
