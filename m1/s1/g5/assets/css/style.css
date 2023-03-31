@@ -85,6 +85,10 @@ main {
     padding: 30px;
 }
 
+.main-content h3{
+    margin-bottom:20px;
+}
+
 .rounded-img {
     border-radius:100%;
     width:60%;
@@ -98,8 +102,13 @@ main {
     padding-bottom: 30px;
 }
 
+#ceo {
+    font-size:0.6em;
+}
+
 .cit {
    font-style: italic;
+   font-size: 0.8em;
    margin-bottom: 30px;
 }
 
@@ -148,6 +157,10 @@ footer a {
 
 footer hr {
     width: 40%;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#copyright {
+    font-size: 0.8em;
 }
