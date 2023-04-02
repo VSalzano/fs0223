@@ -121,26 +121,23 @@ main h3{
 
 /* stili dell'aside */
 
-#aside-flex-container {
-    display:flex;
-    justify-content: space-evenly;
+#card-container {
+
     margin-bottom: 150px;
+    text-align: center;
 }
 
 aside article {
-    width: 30%;
-    height: auto;
+    display:inline-block;
+    height: 50vh;
+    width: 50vh;
     text-align: center;
-    overflow-y: auto;
     border-radius: 0 0 10px 10px;
     border: 2px solid rgba(182, 182, 127, 0.37);
     padding-bottom: 60px;
-    scrollbar-width: none;
+    margin-right:3vh;
 }
 
-aside article::-webkit-scrollbar{
-    display: none;
-}
 
 aside article h3 {
     padding-top: 10px;
