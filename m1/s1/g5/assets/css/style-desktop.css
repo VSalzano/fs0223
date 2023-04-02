@@ -133,7 +133,7 @@ aside article {
     width: 50vh;
     text-align: center;
     border-radius: 0 0 10px 10px;
-    border: 2px solid rgba(182, 182, 127, 0.37);
+    border: 1px solid #d1d3d3;
     padding-bottom: 60px;
     margin-right:3vh;
 }
