@@ -131,9 +131,15 @@ aside article {
     width: 30%;
     height: auto;
     text-align: center;
+    overflow-y: auto;
     border-radius: 0 0 10px 10px;
     border: 2px solid rgba(182, 182, 127, 0.37);
     padding-bottom: 60px;
+    scrollbar-width: none;
+}
+
+aside article::-webkit-scrollbar{
+    display: none;
 }
 
 aside article h3 {
