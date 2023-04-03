@@ -1,0 +1,27 @@
+#red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius:100%;
+}
+#yellow {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius:100%;
+}
+#green {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius:100%;
+}
+
+.semaforo {
+    background-color: black;
+    width: 100px;
+}
+
+.lucespenta {
+    opacity: 0.2;
+}
