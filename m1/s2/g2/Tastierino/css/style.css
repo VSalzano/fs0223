@@ -1,0 +1,31 @@
+#calcolatrice {
+    width: 230px;
+    height: auto;
+    background-color: brown;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#display {
+    border-radius: 10px;
+    width: 200px;
+    font-size: 1.7em;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.tastiera {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.tastiera button {
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(110, 190, 228);
+    color: white;
+    margin:5px;
+    box-shadow: 2px 2px 5px black;
+}
