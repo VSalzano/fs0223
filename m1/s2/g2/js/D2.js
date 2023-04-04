@@ -34,6 +34,7 @@ REGOLE
 */
 
 let name = "Vincenzo";
+console.log(name);
 
 
 /* ESERCIZIO 3
@@ -63,6 +64,8 @@ somma();
 */
 
  name = "Salzano";
+
+ console.log(name);
  /*
  const name = "Salzano"
  Uncaught SyntaxError: Identifier 'name' has already been declared (at D2.js:60:7)
