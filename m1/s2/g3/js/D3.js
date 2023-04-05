@@ -2,25 +2,51 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let x = 20;
+let y = 25;
+
+if (x > y){
+  console.log(`${x} è maggiore di ${y}`)
+}else if (y > x){
+  console.log(`${y} è maggiore di ${x}`)
+}else{
+  console.log(`${x} e ${y} sono uguali`)
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let z = 24;
+
+if (z != 5){
+  console.log("not equal")
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let b = 50;
+
+if (b % 5 == 0){
+  console.log(`${b} è divisibile per 5`)
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let c = 3;
+let f = 5;
+
+if (c == 8 || f == 8) {
+  console.log(`Uno dei due valori è uguale a 8`)
+}else if (c + f == 8) {
+  console.log(`la somma di c ed f è uguale a 8`)
+}else if (c - f == 8) {
+  console.log(`la differenza di c ed f è uguale a 8`)
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
