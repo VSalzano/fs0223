@@ -110,7 +110,11 @@ console.log(numArray);
 
 let numero = 44;
 
-console.log(typeof(numero));
+if (typeof(numero) === 'number'){
+  console.log(`${numero} è un numero`)
+}else{
+  console.log(`${numero} non è un numero`)
+}
 
 
 /* ESERCIZIO 9
