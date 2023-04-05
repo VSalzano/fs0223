@@ -2,16 +2,20 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-let x = 20;
-let y = 25;
 
-if (x > y){
-  console.log(`${x} è maggiore di ${y}`)
-}else if (y > x){
-  console.log(`${y} è maggiore di ${x}`)
-}else{
-  console.log(`${x} e ${y} sono uguali`)
-}
+  let x = 20;
+  let y = 25;
+
+  if (x > y){
+    console.log(`${x} è maggiore di ${y}`)
+  }else if (y > x){
+    console.log(`${y} è maggiore di ${x}`)
+  }else{
+    console.log(`${x} e ${y} sono uguali`)
+  }
+
+
+
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -54,14 +58,27 @@ if (c == 8 || f == 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 73;
+let shipping = 10;
+let blackFridaySale = totalShoppingCart / 5
+let fullPrice = totalShoppingCart - blackFridaySale + shipping;
+
+/* if (totalShoppingCart <= 50){
+  console.log(`Totale : € ${fullPrice}`)
+}else{
+  console.log(`Totale : € ${totalShoppingCart}`)
+} */
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (totalShoppingCart - blackFridaySale <= 50){
+  console.log(`Totale : € ${fullPrice}`)
+}else{
+  console.log(`Totale : € ${totalShoppingCart - blackFridaySale}`)
+} 
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -69,19 +86,44 @@ if (c == 8 || f == 8) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num1 = 23;
+let num2 = 78;
+let num3 = 44;
+
+let numArray = [];
+
+if(num1 > num2 && num2 > num3){
+  numArray.push(num1, num2, num3)
+}else if (num2 > num1 && num1 > num3) {
+  numArray.push(num2, num1, num3)
+}else{
+  numArray.push(num2, num3, num1)
+}
+
+console.log(numArray);
+
+
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let numero = 44;
+
+console.log(typeof(numero));
+
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let number = 47;
+
+if (number % 2 == 0){
+  console.log(`${number} è pari`)
+}else if (number % 2 == 1){
+  console.log(`${number} è dispari`)
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -95,7 +137,14 @@ if (c == 8 || f == 8) {
     }
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7
+if (val < 10 && val >= 5) {
+    console.log("Meno di 10");
+  } else if (val < 5) {
+    console.log("Meno di 5");
+  } else {
+    console.log("Uguale a 10 o maggiore");
+  }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -107,19 +156,24 @@ const me = {
   skills: ['javascript', 'html', 'css'],
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.city = 'Toronto'
+
+console.log(me);
+
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop();
+console.log(me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
