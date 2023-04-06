@@ -171,9 +171,10 @@ eyeColor = {
       case "bue-gray": eyeColor.blue_gray.push(starWarsCharacters[p])
       break;
     }
-  }console.log(eyeColor)
+  }
+  
+  console.log(eyeColor)
 
-  console.log(eyeColor);
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
@@ -203,18 +204,22 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-totalMass = 957;
 
 switch (totalMass) {
-  case totalMass < 500: console.log("Ship is under loaded");
+  case 
+  totalMass < 500: console.log("Ship is under loaded");
   break;
-  case totalMass = 500: console.log("Ship is half loaded");
+  case 
+  totalMass = 500: console.log("Ship is half loaded");
   break;
-  case totalMass > 700: console.log("Warning: Load is over 700");
+  case 
+  totalMass > 700: console.log("Warning: Load is over 700");
   break;
-  case totalMass > 900: console.log("Critical Load: Over 900");
+  case 
+  totalMass > 900: console.log("Critical Load: Over 900");
   break;
-  case totalMass > 1000: console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
+  case 
+  totalMass > 1000: console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
   break;
 
 }
