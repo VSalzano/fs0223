@@ -146,11 +146,11 @@ console.log(femaleCharacters);
 */
 
 eyeColor = {
-  blue :  [],
-  yellow :  [],
-  brown :  [],
-  red :  [],
-  blueGray :  []
+  "blue" :  [],
+  "yellow" :  [],
+  "brown" :  [],
+  "red" :  [],
+  "blue-gray" :  []
 }
 
 /* ESERCIZIO 5
@@ -158,20 +158,20 @@ eyeColor = {
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
   */
 
-  for(let i = 0; i < starWarsCharacters.length; i++) {
-    switch(i.eye_color){
-      case 'blue':
-        eyeColor.blue.push(i);
-      case 'yellow':
-        eyeColor.yellow.push(i);
-      case 'brown':
-        eyeColor.brown.push(i);    
-      case 'red':
-        eyeColor.red.push(i);    
-      case 'blueGray':
-        eyeColor.blueGray.push(i);    
+  for(p in starWarsCharacters){
+    switch(starWarsCharacters[p].eye_color){
+      case "blue": eyeColor.blue.push(starWarsCharacters[p])
+      break;
+      case "yellow": eyeColor.yellow.push(starWarsCharacters[p])
+      break;
+      case "brown": eyeColor.brown.push(starWarsCharacters[p])
+      break;
+      case "red": eyeColor.red.push(starWarsCharacters[p])
+      break;
+      case "bue-gray": eyeColor.blue_gray.push(starWarsCharacters[p])
+      break;
     }
-  }
+  }console.log(eyeColor)
 
   console.log(eyeColor);
 
@@ -181,6 +181,7 @@ eyeColor = {
 
   let totalMass = 0;
   let i = 0;
+
   while (i < starWarsCharacters.length) {
     totalMass += Number(starWarsCharacters[i].mass);
     i++;
@@ -201,6 +202,23 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
+
+totalMass = 957;
+
+switch (totalMass) {
+  case totalMass < 500: console.log("Ship is under loaded");
+  break;
+  case totalMass = 500: console.log("Ship is half loaded");
+  break;
+  case totalMass > 700: console.log("Warning: Load is over 700");
+  break;
+  case totalMass > 900: console.log("Critical Load: Over 900");
+  break;
+  case totalMass > 1000: console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
+  break;
+
+}
+
 
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
