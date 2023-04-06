@@ -158,7 +158,8 @@ eyeColor = {
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
   */
 
-  for(p in starWarsCharacters){
+
+  for(p = 0 ; p < starWarsCharacters.length; p++) {
     switch(starWarsCharacters[p].eye_color){
       case "blue": eyeColor.blue.push(starWarsCharacters[p])
       break;
@@ -205,29 +206,37 @@ Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se
 */
 
 
-switch (totalMass) {
-  case 
-  totalMass < 500: console.log("Ship is under loaded");
-  break;
-  case 
-  totalMass = 500: console.log("Ship is half loaded");
-  break;
-  case 
-  totalMass > 700: console.log("Warning: Load is over 700");
-  break;
-  case 
-  totalMass > 900: console.log("Critical Load: Over 900");
-  break;
-  case 
-  totalMass > 1000: console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
-  break;
-
+switch (true) {
+  case totalMass < 500:
+    console.log("ship is under loaded");
+    break;
+  case totalMass == 500:
+    console.log("ship is half loaded");
+    break;
+  case totalMass > 700 && totalMass < 900:
+    console.log("warning: load is over 700");
+    break;
+  case totalMass > 900 && totalMass < 1000:
+    console.log(" critical load: over 900");
+    break;
+  case totalMass > 1000:
+    console.log(" DANGER! OVERLOAD ALERT: Jump ship now!");
+    break;
+  default:
+    break;
 }
-
 
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
 */
+
+for(let i = 0; i < starWarsCharacters.length; i++) {
+  if(starWarsCharacters[i].gender == "n/a"){
+    starWarsCharacters[i].gender = "robot";
+  }
+}
+
+console.log(starWarsCharacters);
 
 /* EXTRA ESERCIZIO 9
 
@@ -238,6 +247,8 @@ Usa uno più for loop per raggiungere il risultato
 
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
+
+
 
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
