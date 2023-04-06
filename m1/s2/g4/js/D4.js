@@ -248,7 +248,15 @@ Usa uno più for loop per raggiungere il risultato
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
 
+for(z=0 ; z < characters.length; z++) {
+  for(y = 0 ; y < femaleCharacters.length; y++){
+    if(characters[z] == femaleCharacters[y].name){
+      characters.splice(z, 1);
+    }
+  }
+}
 
+console.log(characters);
 
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
