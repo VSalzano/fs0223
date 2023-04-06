@@ -261,3 +261,13 @@ console.log(characters);
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
+
+function generateRandomItem(starWarsCharacters) {
+  const randomIndex = Math.floor(Math.random() * starWarsCharacters.length);
+  const item = starWarsCharacters[randomIndex];
+
+  return item;
+}
+
+const result = generateRandomItem(starWarsCharacters);
+console.log(`${result.name} è un personaggio di Star Wars. È alto ${result.height} centimetri ed i suoi capelli sono ${result.hair_color}.`);
