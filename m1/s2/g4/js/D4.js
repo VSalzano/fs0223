@@ -179,14 +179,14 @@ eyeColor = {
   Usa un while loop per calcolare la massa totale dell'equipaggio
   */
 
+  let totalMass = 0;
   let i = 0;
-
-  while(i < starWarsCharacters.length){
-    
+  while (i < starWarsCharacters.length) {
+    totalMass += Number(starWarsCharacters[i].mass);
     i++;
   }
   
-
+  console.log(totalMass);
 
 /* ESERCIZIO 7
 
