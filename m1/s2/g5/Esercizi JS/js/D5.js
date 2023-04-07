@@ -137,25 +137,91 @@ const charactersArray = ["g", "n", "u", "z", "d"]
 
   for(k = 0; k < charactersArray.length; k++){
   switch(charactersArray[k]){
-    case "g": 
-    charactersArray[k] = 7;
+    case "a": 
+    charactersArray[k] = 1;
     numericAlphabetArray.push(charactersArray[k]);
     break;
-    case "n": 
+    case "b": 
+    charactersArray[k] = 2;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "c":
+    charactersArray[k] = 3;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "d":
+    charactersArray[k] = 4;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "e":
+    charactersArray[k] = 5;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "f":
+    charactersArray[k] = 6;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "g":
+    charactersArray[k] = 7;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "h":
+    charactersArray[k] = 8;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "i":
+    charactersArray[k] = 9;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "l":
+    charactersArray[k] = 10;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "m":
+    charactersArray[k] = 11;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "n":
     charactersArray[k] = 12;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "o":
+    charactersArray[k] = 13;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "p":
+    charactersArray[k] = 14;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "q":
+    charactersArray[k] = 15;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "r":
+    charactersArray[k] = 16;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "s":
+    charactersArray[k] = 17;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "t":
+    charactersArray[k] = 18;
     numericAlphabetArray.push(charactersArray[k])
     break;
     case "u":
     charactersArray[k] = 19;
     numericAlphabetArray.push(charactersArray[k])
     break;
+    case "v":
+    charactersArray[k] = 20;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
     case "z":
     charactersArray[k] = 21;
     numericAlphabetArray.push(charactersArray[k])
-    break;
-    case "d":
-    charactersArray[k] = 4;
-    numericAlphabetArray.push(charactersArray[k])
+    
+    
   }
 }
 
