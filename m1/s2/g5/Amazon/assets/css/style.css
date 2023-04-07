@@ -131,7 +131,7 @@ body {
     width: 400px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.548);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.541);
 }
 
 .img-container img {
@@ -141,4 +141,29 @@ body {
 .lower-section .redirect-title {
     text-align: center;
     padding-top: 2px;
+}
+
+/* stili del footer */
+
+#footer-bar {
+    background-color: #364759;
+    height: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer-bar a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}
+
+footer .logo-container {
+    text-align: center;
+}
+
+.logo-container #footer-logo {
+    width: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
