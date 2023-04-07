@@ -89,7 +89,8 @@ body {
 
 
 .redirect-title h3{
-    font-size: 1.8em;
+    font-size: 1.5em;
+    font-weight: bold;
     display:inline;
 }
 
@@ -139,4 +140,5 @@ body {
 
 .lower-section .redirect-title {
     text-align: center;
+    padding-top: 2px;
 }
