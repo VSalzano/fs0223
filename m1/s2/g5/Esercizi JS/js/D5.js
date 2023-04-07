@@ -116,6 +116,8 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
 
+console.log(numericArray.indexOf(32));
+
 let q = 0;
 
 while(q < 14){
@@ -129,3 +131,36 @@ while(q < 14){
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"]
+
+{
+  let numericAlphabetArray = [];
+
+  for(k = 0; k < charactersArray.length; k++){
+  switch(charactersArray[k]){
+    case "g": 
+    charactersArray[k] = 7;
+    numericAlphabetArray.push(charactersArray[k]);
+    break;
+    case "n": 
+    charactersArray[k] = 12;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "u":
+    charactersArray[k] = 19;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "z":
+    charactersArray[k] = 21;
+    numericAlphabetArray.push(charactersArray[k])
+    break;
+    case "d":
+    charactersArray[k] = 4;
+    numericAlphabetArray.push(charactersArray[k])
+  }
+}
+
+console.log(numericAlphabetArray);
+
+}
+
+
