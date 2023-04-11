@@ -255,19 +255,25 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
 */
 
 {
-    arr = [2, 8, 6, 2, 4, 6,]
+    arrayMisto = [2, 8, 6, 2, 28, 'gianluca', 6,]
+    let sum = 0
 
-    function average(arr){
-        let sum = 0;
-        for (let i = 0; i < arr.length; i++) {
-            sum += arr[i];
-        }
-        return sum / arr.length;
+
+    function average(arr) {
+        
+            for(let i = 0; i < arr.length; i++){
+                if(typeof arr[i] === 'number'){
+                    sum += arr[i];    
+            }
+            
+            sum = sum / arr.length;
+            }    
+        
+        console.log(sum);
     }
 
-    console.log(average(arr))
+    average(arrayMisto);
 }
-
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */
