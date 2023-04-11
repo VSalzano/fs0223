@@ -140,7 +140,22 @@ console.log(crazySum(2,3))
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    function upperFirst(str){
+        let splittedString = str.split(" ")
+        for(let i = 0; i < splittedString.length; i++){
+            splittedString[i] = splittedString[i].charAt(0).toUpperCase() + splittedString[i].slice(1)
+        }
+        return splittedString.join(" ")
+        
+    }
+
+    console.log(upperFirst("amo passare pasquetta studiando javascript"))
+
+
+}
+
+
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
