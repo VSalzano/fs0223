@@ -255,21 +255,22 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
 */
 
 {
-    arrayMisto = [2, 8, 6, 2, 28, 'gianluca', 6,]
+    arrayMisto = [23, 'goku', 8, 23, 2, 28, 'pegasus', 6,]
     let sum = 0
+    let media = 0
 
 
     function average(arr) {
         
             for(let i = 0; i < arr.length; i++){
                 if(typeof arr[i] === 'number'){
-                    sum += arr[i];    
+                    sum += arr[i];
+                    media = sum / arr.length;    
             }
             
-            sum = sum / arr.length;
             }    
         
-        console.log(sum);
+        console.log(media);
     }
 
     average(arrayMisto);
