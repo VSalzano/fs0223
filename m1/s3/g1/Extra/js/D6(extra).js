@@ -87,7 +87,52 @@ shoppingCartTotal();
  Crea una funzione chiamata "addToShoppingCart" che riceve un nuovo oggetto dello stesso tipo, lo aggiunge a "shoppingCart" e ritorna il nuovo numero totale degli elementi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+
+    function Item (id, name, price, quantity) {
+        this.id = id
+        this.name = name
+        this.price = price
+        this.quantity = quantity
+    }
+    
+    let shoppingCart = [
+        {
+            id: 1,
+            name: "T-shirt",
+            price: 20,
+            quantity: 5
+        },
+        {
+            id: 2,
+            name: "pantaloni",
+            price: 50,
+            quantity: 2
+        },
+        {
+            id: 3,
+            name: "scarpe",
+            price: 70,
+            quantity: 1
+        }
+    ]
+
+    function addToShoppingCart(item) {
+        shoppingCart.push(item)
+        let total = 0
+        for(let i=0; i<shoppingCart.length; i++){
+            total += shoppingCart[i].quantity
+        }
+        console.log(total)
+
+    }
+
+    addToShoppingCart(new Item (4, "cappotto", 100, 1))
+
+    console.log(shoppingCart);
+
+
+}
 
 /* EXTRA 4
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
