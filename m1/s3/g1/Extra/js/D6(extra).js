@@ -22,6 +22,8 @@
             if(numeriCasuali[i] > 5){
                 console.log(`${numeriCasuali[i]} è maggiore di 5`)
                 numeriMaggiore5.push(numeriCasuali[i])
+            }else if(numeriCasuali[i] = 5){
+                console.log(`${numeriCasuali[i]} è uguale a 5`)
             }else{
                 console.log(`${numeriCasuali[i]} è minore di 5`)
             }
