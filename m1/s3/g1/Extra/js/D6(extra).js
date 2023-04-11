@@ -189,7 +189,40 @@ maxShoppingCart();
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    let shoppingCart = [
+        {
+            id: 1,
+            name: "T-shirt",
+            price: 20,
+            quantity: 5
+        },
+        {
+            id: 2,
+            name: "pantaloni",
+            price: 50,
+            quantity: 2
+        },
+        {
+            id: 3,
+            name: "scarpe",
+            price: 70,
+            quantity: 1
+        },
+        {
+            id: 4,
+            name: "cappotto",
+            price: 100,
+            quantity: 1
+        }
+    ]
+
+    function latestShoppingCart() {
+        return shoppingCart[shoppingCart.length - 1]
+    }
+
+    console.log(latestShoppingCart());
+}
 
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
