@@ -231,12 +231,12 @@ maxShoppingCart();
 
 {   
 
-    let counter = []
+    let elencoNumeri = []
     function loopUntil(x) {
         let consecutiveCount = 0;
         while (consecutiveCount < 3) {
           let randomNumber = Math.floor(Math.random() * 10);
-            counter.push(randomNumber);
+            elencoNumeri.push(randomNumber);
           if (randomNumber > x) {
             consecutiveCount++;
           } else {
@@ -244,7 +244,7 @@ maxShoppingCart();
           }
         }
 
-        console.log(counter)
+        console.log(elencoNumeri)
       }
 
     loopUntil(5)
@@ -254,7 +254,19 @@ maxShoppingCart();
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    arr = [2, 8, 6, 2, 4, 6,]
+
+    function average(arr){
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum / arr.length;
+    }
+
+    console.log(average(arr))
+}
 
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
