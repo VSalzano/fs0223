@@ -229,8 +229,23 @@ maxShoppingCart();
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    function loopUntil(x) {
+        let numeriCasuali = []
+        let i = 0
+        
+        while(i < x){
+            numeriCasuali.push(Math.floor(Math.random() * 10))
+            i++
+    
+        }
 
+        console.log(numeriCasuali)
+
+    }
+
+    loopUntil(24);
+}
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
