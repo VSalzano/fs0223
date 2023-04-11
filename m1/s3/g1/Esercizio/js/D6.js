@@ -174,4 +174,15 @@ console.log(crazySum(2,3))
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    function giveMeRandom(n){
+        let numeriCasuali = []
+        for(let i = 0; i < n; i++){
+            numeriCasuali.push(Math.floor(Math.random() * 10))
+        }
+        return numeriCasuali
+    }
+
+    console.log(giveMeRandom(10))
+
+}
