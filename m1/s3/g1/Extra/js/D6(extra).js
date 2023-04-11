@@ -48,7 +48,8 @@
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).
 */
 
-let shoppingCart = [
+{
+    let shoppingCart = [
     {
         id: 1,
         name: "T-shirt",
@@ -79,6 +80,7 @@ function shoppingCartTotal(){
 }
 
 shoppingCartTotal();
+}
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
