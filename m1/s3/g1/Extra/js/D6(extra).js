@@ -169,10 +169,13 @@ shoppingCartTotal();
 
     function maxShoppingCart() {
         let prices = []
+        let maxPrice = 0
         for(let i = 0; i < shoppingCart.length; i++){
             prices.push(shoppingCart[i].price)            
         }
-        console.log(Math.max(...prices))
+        maxPrice = Math.max(...prices);
+        console.log(maxPrice);
+        
 }
 
 maxShoppingCart();
