@@ -6,7 +6,42 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    let numeriCasuali = []
+    let numeriMaggiore5 = []
+    let somma = 0
+    
+    function giveMeRandom(n){
+        for(let i=0; i<n; i++){
+          numeriCasuali.push(Math.floor(Math.random() * 10))  
+        }
+
+        console.log(numeriCasuali)
+        
+        for(let i=0; i<numeriCasuali.length; i++){
+            if(numeriCasuali[i] > 5){
+                console.log(`${numeriCasuali[i]} è maggiore di 5`)
+                numeriMaggiore5.push(numeriCasuali[i])
+            }else{
+                console.log(`${numeriCasuali[i]} è minore di 5`)
+            }
+        }
+
+        let sommaMaggiore5 = numeriMaggiore5.reduce((previous, next) => {
+            return somma = previous += next
+        })
+
+        console.log(somma)
+
+        
+    }
+
+    giveMeRandom(10);
+
+
+    
+
+}
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
