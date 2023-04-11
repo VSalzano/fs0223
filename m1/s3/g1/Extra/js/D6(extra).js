@@ -48,7 +48,37 @@
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let shoppingCart = [
+    {
+        id: 1,
+        name: "T-shirt",
+        price: 20,
+        quantity: 5
+    },
+    {
+        id: 2,
+        name: "pantaloni",
+        price: 50,
+        quantity: 2
+    },
+    {
+        id: 3,
+        name: "scarpe",
+        price: 70,
+        quantity: 1
+    }
+]
+
+function shoppingCartTotal(){
+    let total = 0
+    for(let i=0; i<shoppingCart.length; i++){
+        total += shoppingCart[i].price * shoppingCart[i].quantity
+    }
+
+    console.log(total)
+}
+
+shoppingCartTotal();
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
