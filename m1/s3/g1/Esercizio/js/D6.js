@@ -162,7 +162,13 @@ console.log(crazySum(2,3))
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    function cutString(str){
+        return str.substring(1, str.length - 1)        
+    }
+
+    console.log(cutString("Hello World"))
+}
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
