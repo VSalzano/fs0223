@@ -274,6 +274,13 @@ const movies = [
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+{
+  function movieCount (arr){
+    return arr.length
+  }
+
+  console.log(movieCount(movies))
+}
 
 /* ESERCIZIO 12
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
