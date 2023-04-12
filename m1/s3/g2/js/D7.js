@@ -286,6 +286,13 @@ const movies = [
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+{
+  function movieTitles (arr){
+    return arr.map(movie => movie.Title)
+  }
+  console.log(movieTitles(movies))
+}
+
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
