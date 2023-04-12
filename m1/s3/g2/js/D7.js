@@ -288,7 +288,8 @@ const movies = [
 
 {
   function movieTitles (arr){
-    return arr.map(movie => movie.Title)
+    let titlesList = arr.map(movie => movie.Title)
+    return titlesList
   }
   console.log(movieTitles(movies))
 }
