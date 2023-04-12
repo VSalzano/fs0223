@@ -111,6 +111,20 @@ console.log(newArr())
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+{
+  let arrayEsempio = ["EPICODE", "is", "great"];
+
+  function convertiArray (arr){
+    let convertedArray = []
+    for (let i = 0; i < arr.length; i++) {
+      convertedArray.push(arr[i].length)
+    }
+    return convertedArray
+  }
+
+  console.log(convertiArray(arrayEsempio))
+}
+
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
