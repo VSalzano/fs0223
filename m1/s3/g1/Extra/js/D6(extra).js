@@ -268,7 +268,7 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
                 if(typeof arr[i] === 'number'){
                     sum += arr[i];
                     media = sum / arr.length;    
-            }
+                }
             
             }    
         
@@ -299,7 +299,21 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
  La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+   function antiSpam(emailContent) {
+    if (emailContent.includes("spam") || emailContent.includes("scam")) {
+        return true;
+    } else {
+        return false;
+    }
+   } 
+
+   let email = "spam@scam.com"
+   let email2 = "ciao@ciao.it"
+
+   console.log(antiSpam(email))
+   console.log(antiSpam(email2))
+}
 
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
