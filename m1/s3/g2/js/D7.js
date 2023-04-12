@@ -320,3 +320,13 @@ const movies = [
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+ {
+  function yearSum (arr){
+    let yearSum = 0
+    for (let i = 0; i < arr.length; i++) {
+      yearSum += parseInt(arr[i].Year)
+    }
+    return yearSum
+  }
+  console.log(yearSum(movies))
+ }
