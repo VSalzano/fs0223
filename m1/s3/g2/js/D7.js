@@ -30,13 +30,16 @@
 */
 
 {
-  let arr = []
+    function newArr () {
+      let arr = []
 
-  for (let i = 0; i < 10; i++) {
-    arr.push(Math.floor(Math.random() * 100))
-  }
-
-  console.log(arr)
+      for (let i = 0; i < 10; i++) {
+        arr.push(Math.floor(Math.random() * 100))
+      }
+      return arr
+    }
+    
+console.log(newArr())
 }
 
 /* ESERCIZIO 3
