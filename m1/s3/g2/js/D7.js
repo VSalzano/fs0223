@@ -38,13 +38,26 @@
       }
       return arr
     }
-    
+
 console.log(newArr())
 }
 
 /* ESERCIZIO 3
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
+
+{
+  function findEven() {
+      let arr = []
+      for(let i = 0; i < 10; i++) {
+        arr.push(Math.floor(Math.random() * 10))
+      }
+      return arr.filter(evenNumbers => evenNumbers % 2 == 0)
+
+  }
+
+  console.log(findEven())
+}
 
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array
