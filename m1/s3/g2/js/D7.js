@@ -309,6 +309,14 @@ const movies = [
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+{
+  function searchMovie (arr, imdbID){
+    let myMovie = arr.find(movie => movie.imdbID == imdbID)
+    return myMovie
+  }
+  console.log(searchMovie(movies, "tt0077869"))
+}
+
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
