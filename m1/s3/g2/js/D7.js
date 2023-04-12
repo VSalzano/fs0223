@@ -129,6 +129,20 @@ console.log(newArr())
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
+{
+  {
+    function findOdds() {
+        let arr = []
+        for(let i = 1 ; i <= 99; i++) {
+          arr.push(i)
+        }
+        return arr.filter(oddNumbers => oddNumbers % 2 == 1) 
+    }
+  
+    console.log(findOdds())
+  }
+}
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
