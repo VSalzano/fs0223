@@ -81,6 +81,12 @@ console.log(newArr())
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
 
+{
+  let serieNumeri = [1, 2, 5, 5, 5, 8, 2]
+
+  console.log(serieNumeri.reduce((p,c) => p + c))
+}
+
 /* ESERCIZIO 6
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
