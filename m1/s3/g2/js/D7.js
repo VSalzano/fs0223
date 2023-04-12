@@ -63,6 +63,20 @@ console.log(newArr())
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+{
+  let serieNumeri = [1, 2, 5, 5, 5, 8, 2]
+
+  function sumNumbers(arr) {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i]
+    }
+    return sum
+  }
+
+  console.log(sumNumbers(serieNumeri))
+}
+
 /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
