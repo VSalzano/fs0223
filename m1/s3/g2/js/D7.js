@@ -91,6 +91,21 @@ console.log(newArr())
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
+{
+  let serieNumeri = [1, 2, 5, 5, 5, 8, 2]
+  let n = 3
+
+  function incrementArray(arr, n) {
+    let newArray = []
+    for (let i = 0; i < arr.length; i++) {
+      newArray.push(arr[i] + n)
+    }
+    return newArray
+  }
+
+  console.log(incrementArray(serieNumeri, n))
+}
+
 /* ESERCIZIO 8
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
