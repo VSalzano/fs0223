@@ -13,7 +13,7 @@
       let arr2 = b.split(" ")
 
       let newArr1 = arr1.splice(0, 3)
-      let newArr2 = arr2.splice(0, 3)
+      let newArr2 = arr2.splice(-3, 3)
 
       let concatArray = newArr1.concat(newArr2)
       return concatArray.join(" ").toUpperCase();
@@ -28,6 +28,16 @@
 /* ESERCIZIO 2
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
+
+{
+  let arr = []
+
+  for (let i = 0; i < 10; i++) {
+    arr.push(Math.floor(Math.random() * 100))
+  }
+
+  console.log(arr)
+}
 
 /* ESERCIZIO 3
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
