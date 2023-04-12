@@ -297,6 +297,13 @@ const movies = [
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+{
+  function recentMovies (arr){
+    let recentMoviesList = arr.filter(movie => movie.Year >= 2000)
+    return recentMoviesList
+  }
+  console.log(recentMovies(movies))
+}
 
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
