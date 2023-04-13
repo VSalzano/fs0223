@@ -194,9 +194,21 @@
 
     const makeItClickable = function () {
 
+      let delTitle = document.querySelector('h1')
+        let testo = delTitle.innerText
+      
 
+      delTitle.addEventListener('click', function () {
+        
+
+        testo = testo.substring(0, testo.length  -1)
+        delTitle.innerText = testo
+      })
+      
     }
 
+    makeItClickable()
+    
     /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
