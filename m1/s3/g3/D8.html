@@ -140,9 +140,13 @@
     */
 
     const addToTheSecond = function () {
-      
+      let li = document.createElement('li')
+      let lista = document.querySelector('#secondList')
 
+      lista.appendChild(li).textContent = '4th'
     }
+
+    addToTheSecond();
 
     /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un secondo paragrafo al primo div
