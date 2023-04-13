@@ -199,10 +199,7 @@
       
 
       delTitle.addEventListener('click', function () {
-        
-
-        delTitle.innerText = delTitle.innerText.substring(0, delTitle.innerText.length -1)
-                
+                delTitle.innerText = delTitle.innerText.substring(0, delTitle.innerText.length -1)  
       })
       
     }
@@ -229,8 +226,48 @@
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
 
-    const generateTable = function () {
+    let elementsArr = []
+
+    function Elementi (immagine, nomeProdotto, quantità, prezzo){
+      this.immagine = immagine,
+      this.nomeProdotto = nomeProdotto,
+      this.quantità = quantità,
+      this.prezzo = prezzo
+      return elementsArr.push(this)
+
     }
+
+    let el1 = new Elementi ('https://m.media-amazon.com/images/I/81WGR5GPCML._AC_SY741_.jpg', 'Super Mario Party', 3, 47.90)
+    let el2 = new Elementi ('https://m.media-amazon.com/images/I/81cHm50auZL._AC_SY741_.jpg', 'The Legend of Zelda', 4, 50.99)
+    let el3 = new Elementi ('https://m.media-amazon.com/images/I/81cHm50auZL._AC_SY741_.jpg', 'Splatoon 3', 3, 48.30)
+    let el4 = new Elementi ('https://m.media-amazon.com/images/I/81cHm50auZL._AC_SY741_.jpg', "Luigi's Mansion", 2, 40)
+    let el5 = new Elementi ('https://m.media-amazon.com/images/I/81cHm50auZL._AC_SY741_.jpg', 'Super Mario Party', 3, 50.99)
+
+    
+
+    const generateTable = function () {
+        let target = document.querySelector('#tablearea')
+        let table = document.createElement('table')
+
+        target.append(table)
+        
+        let columns = ['immagine', 'nome prodotto', 'quantità', 'prezzo']
+
+
+        
+        elementsArr.forEach(tr => table.append('tr'))
+        
+
+
+
+
+        
+
+        
+        
+    }
+    generateTable()
+
 
     /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
