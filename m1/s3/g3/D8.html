@@ -195,14 +195,14 @@
     const makeItClickable = function () {
 
       let delTitle = document.querySelector('h1')
-        let testo = delTitle.innerText
+        
       
 
       delTitle.addEventListener('click', function () {
         
 
-        testo = testo.substring(0, testo.length -1)
-        delTitle.innerText = testo
+        delTitle.innerText = delTitle.innerText.substring(0, delTitle.innerText.length -1)
+                
       })
       
     }
@@ -230,8 +230,6 @@
     */
 
     const generateTable = function () {
-
-
     }
 
     /* ESERCIZIO 12
