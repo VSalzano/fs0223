@@ -153,9 +153,14 @@
     */
 
     const addParagraph = function () {
+      let newParagraph = document.createElement('p')
+      let divs = document.querySelectorAll('div')
 
+      divs[1].appendChild(newParagraph).textContent = "Questo è il nuovo paragrafo dell'esercizio 6"
 
     }
+
+    addParagraph();
 
     /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
