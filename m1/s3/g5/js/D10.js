@@ -531,6 +531,13 @@ function delMyList(){
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+function addStyle(){
+  let trs = document.querySelectorAll("tr");
+  for(let i of trs){
+    i.classList.add("test");
+  }
+}
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
