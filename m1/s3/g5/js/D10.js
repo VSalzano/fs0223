@@ -475,7 +475,7 @@ console.log(removeIndex(13));
 */
 
 function selectContainer() {
-  let container = document.querySelector("container");
+  let container = document.querySelector("#container");
 }
 
 /* ESERCIZIO 21
@@ -490,6 +490,12 @@ function selectTds(){
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+function tdPrint() {
+  let tds = document.querySelectorAll("td");
+  for(let i of tds){
+    console.log(tds[i].textContent);
+  }
+}
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
