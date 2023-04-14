@@ -475,12 +475,16 @@ console.log(removeIndex(13));
 */
 
 function selectContainer() {
-  let container = document.getElementById("container");
+  let container = document.querySelector("container");
 }
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+
+function selectTds(){
+  let tds = document.querySelectorAll("td");
+}
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
