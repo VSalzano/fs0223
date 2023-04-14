@@ -512,9 +512,20 @@ function makeBgsRed() {
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+function addMyList() {
+  let myList = document.querySelector("#myList");
+  let newLi = document.createElement("li");
+  myList.appendChild(newLi);
+}
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
+
+function delMyList(){
+  let myList = document.querySelector("#myList");
+  myList.innerHTML = "";
+}
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
