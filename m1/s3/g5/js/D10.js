@@ -454,6 +454,15 @@ console.log(searchAndDivide("rings"));
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
+function removeIndex(delIndex) {
+ movies.splice(delIndex, 1);
+ return movies;
+}
+
+console.log(removeIndex(13));
+
+
+
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
