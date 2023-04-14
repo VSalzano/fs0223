@@ -610,7 +610,7 @@ tree(3)
 function isItPrime(num) {
   
 
-  if(num == 0 || num == 1 || num % 2 == 0){
+  if(num == 0 || num == 1 || num % 2 == 0 || num % 5 == 0 || num % 7 == 0 || num % 11 == 0){
     return false; 
   }
 
@@ -625,4 +625,4 @@ function isItPrime(num) {
 
 }
 
-console.log(isItPrime(19));
+console.log(isItPrime(37));
