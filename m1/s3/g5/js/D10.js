@@ -552,6 +552,23 @@ function addStyle(){
 
 */
 
+function halfTree(num) {
+  let arr = []
+  for(let i = 1; i <= num; i++){
+    arr.push("*".repeat(i));
+  }
+
+  for(let i of arr){
+    console.log(i);
+  }
+
+  
+}
+
+halfTree(7)
+
+
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
