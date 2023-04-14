@@ -220,7 +220,9 @@ function isTodayMyBirthday(date){
 
 // Arrays & Oggetti
 
-// NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
+
+
+/* Questo array viene usato per gli esercizi. Non modificarlo. */
 const movies = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',
@@ -565,7 +567,7 @@ function halfTree(num) {
   
 }
 
-halfTree(7)
+
 
 
 
@@ -581,10 +583,26 @@ halfTree(7)
 
 */
 
+function tree(num) {
+  
+  let arr = []
+
+  for(let i = 1; i <= num; i++){
+    if(i == 1){
+      arr.push("*");
+    }else if(i > 1){
+      arr.push("*".repeat(i + (i -1)));
+    }
+}
+
+for(let i of arr){
+  console.log(i);
+}
+
+}
+
+tree(3)
+
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
-
-/* Questo array viene usato per gli esercizi. Non modificarlo. */
-
-
