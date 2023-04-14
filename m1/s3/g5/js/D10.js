@@ -606,3 +606,23 @@ tree(3)
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+
+function isItPrime(num) {
+  
+
+  if(num == 0 || num == 1 || num % 2 == 0){
+    return false; 
+  }
+
+  let radiceQuadrata = Math.sqrt(num);
+  for(let i = 3; i <= radiceQuadrata; i++){
+    if(num % i == 0){
+      return false;
+    }else{
+      return true;
+    }
+  }
+
+}
+
+console.log(isItPrime(19));
