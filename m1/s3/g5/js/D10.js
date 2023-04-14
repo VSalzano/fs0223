@@ -13,8 +13,10 @@ REGOLE
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
 
-  let sum = 10 + 20;
+  {
+    let sum = 10 + 20;
   console.log(sum);
+}
 
 
 /* ESERCIZIO B
@@ -171,16 +173,19 @@ console.log(whatDayIsIt());
   }
 */
 
-function rollTheDices(num) {
-  
-  for (let i = 0; i < num; i++) {
-    result.sum += dice();
-    result.values.push(dice());
-  }
-  return {
+function rollTheDices(j) {
+  let result = {
     sum: 0,
     values: []
-  };
+  } 
+
+  for (let i = 0 ; i < j; i++){
+    let valori = dice();
+    result.sum = result.sum += valori; 
+    result.values.push(valori);
+  }
+
+  return result;
 }
 
 console.log(rollTheDices(3));
