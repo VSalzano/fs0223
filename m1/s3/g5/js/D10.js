@@ -496,9 +496,17 @@ function tdPrint() {
     console.log(tds[i].textContent);
   }
 }
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+
+function makeBgsRed() {
+  let links = document.querySelectorAll("a");
+  for(let i of links){
+    i.style.backgroundColor = "red";
+  }
+}
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
