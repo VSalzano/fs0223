@@ -206,6 +206,18 @@ function howManyDays(date){
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 
+function isTodayMyBirthday(date){
+  let today = new Date();
+  let todayMonth = today.getMonth();
+  let todayDay = today.getDate();
+
+  if(date.getMonth() == todayMonth  && date.getDate() == todayDay){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
