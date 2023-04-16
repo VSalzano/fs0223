@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    display:flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.complete {
+    text-decoration: line-through;
+}
+
+.cancel-btn {
+    height: 20px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 100%;
+    color: white;
+    background-color: red;
+}
+
+.cancel-btn:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+
+.container {
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(3, 88, 88);
+    border-radius: 15px 15px 0 0;
+    padding-bottom: 20px;
+    
+}
+
+li {
+    list-style-type: none;
+    margin: 0 auto;
+    background-color: rgb(1, 104, 117);
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    border-top: 1px solid black;
+    color: white;
+    
+}
+
+li:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+#input-field {
+    font-size: 1.8em;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.507);
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+h1 {
+    background-image: linear-gradient(12deg, rgb(59, 148, 148), rgb(3, 79, 109));
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#task-list {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#add-btn {
+    font-size: 1.5em;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    background-color: rgb(1, 72, 82);
+    color: white;
+}
+
+#add-btn:hover {
+    background-color: rgba(1, 73, 82, 0.377);
+    cursor: pointer;
+}
