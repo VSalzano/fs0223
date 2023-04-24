@@ -99,6 +99,7 @@ main {
   position: relative;
   bottom: 42px;
   opacity: 0.5;
+  width: 430px;
 }
 
 @media screen and (min-width: 700px) {
