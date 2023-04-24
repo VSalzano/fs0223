@@ -415,4 +415,10 @@ footer a {
   background-color: #dddddd79;
   font-size: 1.8em;
   padding-right: 0;
+  display: block;
+  margin: 10px;
+}
+
+#up {
+  color: rgb(201, 74, 95)
 }
