@@ -101,6 +101,15 @@ main {
   opacity: 0.5;
 }
 
+@media screen and (min-width: 1200px) {
+  #underline {
+    position: relative;
+    bottom: 42px;
+    opacity: 0.5;
+    left: 580px;
+  }
+}
+
 .imgLeft {
   float: left;
 }
