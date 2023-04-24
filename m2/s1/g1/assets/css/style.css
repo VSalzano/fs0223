@@ -310,9 +310,6 @@ button {
   input {
     padding: 15px;
   }
-  button {
-    padding: 15px 30px;
-  }
 }
 
 /* ELEMENTI NELL' ASIDE */
@@ -422,10 +419,25 @@ footer a {
   padding-right: 0;
   display: block;
   margin: 10px;
+  margin-right: 0;
 }
 
 #up {
   color: rgb(201, 74, 95)
+}
+
+@media screen and (min-width: 700px) {
+  .keys {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: 100%;
+    z-index: 2;
+  }
+
+  #go-up {
+    margin-top: 2950px;
+  }
 }
 
 aside .label {
