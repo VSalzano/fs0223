@@ -29,6 +29,7 @@ header {
   padding: 2em 1.5em;
   position: sticky;
   top: 15px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 800px) {
@@ -398,4 +399,20 @@ footer a {
   .toTop {
     display: none;
   }
+}
+
+.keys {
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+}
+
+.keys button {
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 15px 0 0 15px;
+  background-color: #dddddd79;
+  font-size: 1.8em;
+  padding-right: 0;
 }
