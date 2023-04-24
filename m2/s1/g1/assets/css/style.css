@@ -27,6 +27,8 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 15px;
 }
 
 @media screen and (min-width: 800px) {
@@ -96,6 +98,10 @@ main {
   position: relative;
   bottom: 42px;
   opacity: 0.5;
+}
+
+.imgLeft {
+  float: left;
 }
 
 @media screen and (min-width: 700px) {
