@@ -445,8 +445,9 @@ footer a {
     z-index: 2;
   }
 
-  #go-up {
-    margin-top: 2950px;
+  .keys #go-up {
+    position: fixed;
+    bottom: 10px;
   }
 }
 
