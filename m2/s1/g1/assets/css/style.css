@@ -91,6 +91,13 @@ main {
   padding: 2em 1em;
   margin-bottom: 1.5em;
 }
+
+#underline {
+  position: relative;
+  bottom: 42px;
+  opacity: 0.5;
+}
+
 @media screen and (min-width: 700px) {
   main {
     padding: 2em;
