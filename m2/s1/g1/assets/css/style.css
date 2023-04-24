@@ -104,9 +104,10 @@ main {
 @media screen and (min-width: 1200px) {
   #underline {
     position: relative;
-    bottom: 42px;
+    bottom: 52px;
     opacity: 0.5;
-    left: 580px;
+    width: 520px;
+    left: 450px;
   }
 }
 
