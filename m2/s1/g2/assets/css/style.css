@@ -66,6 +66,33 @@ body {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .nav-bar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 18%;
+    }
+
+    .nav-bar ul {
+        display: block;
+        padding-left: 0;
+    }
+
+    main {
+        margin-left: 400px;
+    }
+
+    .nav-bar ul li {
+        padding: 40px 40px;
+    }
+
+    #shop-btn {
+        padding: 40px 60px;
+    }
+}
+
 h1 {
     color:#7E4A1F;
     text-align: center;
@@ -131,6 +158,13 @@ h1 {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    
+    .card {
+        width: 20%;
+    }
+}
+
 h2 {
     color:#7E4A1F;
     text-align: center;
@@ -165,11 +199,13 @@ h2 {
         display: flex;
         flex-direction: row-reverse;
         padding: 5px 20px;
+        margin-right: 30px;
     }
 
     .article-img {
-        width: 100%;
+        width: 4000px;
         margin-top: 10px;
         margin-right: 30px;
+        background-position: center;
     }
 }
