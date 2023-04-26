@@ -44,6 +44,28 @@ body {
     font-weight: bold;
 }
 
+@media screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+    }
+
+    .nav-bar {
+        border-radius: 0;
+    }
+
+    .nav-bar ul {
+        flex-wrap: nowrap;
+    }
+
+    .nav-bar ul li {
+        text-align: center;
+        margin-right: 20px;
+        display:flex;
+        align-items: center;
+    }
+}
+
 h1 {
     color:#7E4A1F;
     text-align: center;
@@ -56,6 +78,7 @@ h1 {
     color:#7E4A1F;
     background-color: #FBF7E3;
     text-align: center;
+    width: 483px;
     border-radius: 40px;
     margin-bottom: 30px;
 }
@@ -93,6 +116,19 @@ h1 {
     border: none;
     padding: 10px 40px;
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+
+    .card {
+        margin: 10px;
+        width: 45%;
+        display:inline-block;
+    }
+
+    .card img {
+        width: 23rem;
+    }
 }
 
 h2 {
