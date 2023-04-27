@@ -30,12 +30,12 @@ body {
 @keyframes showFirst {
     0% {
         opacity: 0;
-        transform: translateX(0) translateY(-200%)
+        transform: translateY(-200%)
     }
 
     15% {
         opacity:1;
-        transform: translateX(0) translateY(-200%);
+        transform: translateY(-200%);
     }
 
     50% {
@@ -54,12 +54,12 @@ body {
 @keyframes showSecond {
     0% {
         opacity: 0;
-        transform: translateX(0) translateY(-200%)
+        transform: translateY(-200%)
     }
 
     15% {
         opacity:1;
-        transform: translateX(0) translateY(-200%);
+        transform: translateY(-200%);
     }
 
     50% {
@@ -78,12 +78,12 @@ body {
 @keyframes showThird {
     0% {
         opacity: 0;
-        transform: translateX(0) translateY(-200%)
+        transform: translateY(-200%)
     }
 
     15% {
         opacity:1;
-        transform: translateX(0) translateY(-200%);
+        transform: translateY(-200%);
     }
 
     50% {
@@ -101,16 +101,16 @@ body {
 
 #first {
     opacity: 0;
-    animation: showFirst 4s linear 3s infinite;
+    animation: showFirst 4s linear 1s infinite;
 }
 
 #second {
     opacity: 0;
-    animation: showSecond 4s linear 6s infinite;
+    animation: showSecond 4s linear 4s infinite;
 }
 
 #third {
     opacity: 0;
-    animation: showThird 4s linear 8s infinite;
+    animation: showThird 4s linear 6s infinite;
 }
 
