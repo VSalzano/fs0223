@@ -24,10 +24,58 @@ body {
 
 .parole i {
     position: absolute;
-    right: 1300px;
+    right: 1350px;
 }
 
-@keyframes showText {
+@keyframes showFirst {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(-200%)
+    }
+
+    15% {
+        opacity:1;
+        transform: translateX(0) translateY(-200%);
+    }
+
+    50% {
+        opacity:1;
+    }
+
+    90% {
+        opacity:1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes showSecond {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(-200%)
+    }
+
+    15% {
+        opacity:1;
+        transform: translateX(0) translateY(-200%);
+    }
+
+    50% {
+        opacity:1;
+    }
+
+    90% {
+        opacity:1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes showThird {
     0% {
         opacity: 0;
         transform: translateX(0) translateY(-200%)
@@ -53,14 +101,16 @@ body {
 
 #first {
     opacity: 0;
-    animation: showText 3s ease 0s infinite;
+    animation: showFirst 3s linear 2s infinite;
 }
 
 #second {
     opacity: 0;
+    animation: showSecond 3s linear 4s infinite;
 }
 
 #third {
     opacity: 0;
+    animation: showThird 3s linear 6s infinite;
 }
 
