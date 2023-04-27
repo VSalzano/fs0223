@@ -101,16 +101,16 @@ body {
 
 #first {
     opacity: 0;
-    animation: showFirst 3s linear 2s infinite;
+    animation: showFirst 4s linear 3s infinite;
 }
 
 #second {
     opacity: 0;
-    animation: showSecond 3s linear 4s infinite;
+    animation: showSecond 4s linear 6s infinite;
 }
 
 #third {
     opacity: 0;
-    animation: showThird 3s linear 6s infinite;
+    animation: showThird 4s linear 8s infinite;
 }
 
