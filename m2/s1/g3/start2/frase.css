@@ -34,12 +34,12 @@ body {
     }
 
     15% {
-        opacity:1;
+        opacity:0;
         transform: translateY(-200%);
     }
 
-    50% {
-        opacity:1;
+    60% {
+        opacity:0;
     }
 
     90% {
@@ -58,12 +58,12 @@ body {
     }
 
     15% {
-        opacity:1;
+        opacity:0;
         transform: translateY(-200%);
     }
 
-    50% {
-        opacity:1;
+    60% {
+        opacity:0;
     }
 
     90% {
@@ -82,12 +82,12 @@ body {
     }
 
     15% {
-        opacity:1;
+        opacity:0;
         transform: translateY(-200%);
     }
 
-    50% {
-        opacity:1;
+    60% {
+        opacity:0;
     }
 
     90% {
