@@ -61,7 +61,7 @@ body {
 }
 
 .postit:hover {
-    transition: 1s;
+    transition: 2s;
     transform: scale(1.2);
     rotate: -360deg;
     z-index: 1;
