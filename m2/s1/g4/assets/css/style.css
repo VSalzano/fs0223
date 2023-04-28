@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+svg {
+    width: 60vh !important;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 25px 300px;
+    border-bottom: 1px solid black;
+    background-color: #ffc017;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#start {
+    background-color: #191919;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+#start a {
+    color: white;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+}
+
+.hero-text {
+    padding-left: 15vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-family: 'Spectral', serif;
+    font-size: 7em;
+    letter-spacing: -0.1em;
+}
+
+.hero-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    padding: 1em 0;
+    margin-bottom: 2em;
+}
+
+.hero-text a {
+    font-family: 'Roboto', sans-serif;
+    background-color:#191919;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 4em;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.trending {
+    display:flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 2em auto;
+}
+
+#trending-h {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#trending-h img {
+    margin-right: 0.4em;
+}
+
+.trending-art {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 380px;
+}
+
+.art-n {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0.2;    
+}
+
+.art-txt {
+    padding-left: 4em;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 1em;
+}
+
+.art-txt div {
+    margin-bottom: 0.3em;
+}
+
+.art-txt a {
+    text-decoration: none;
+    color: black;
+}
+
+.art-txt .art-sub {
+    opacity: 0.5;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+.art-txt .art-title a{
+    font-weight: bold;
+}
+
+.author {
+    display: flex;
+    align-items:center;
+}
+
+.aut-name {
+    font-size: 0.8em;
+}
+
+.author img {
+    height: 1.8em;
+    margin-right: 1em;
+}
+
+.art-container {
+    display: flex;
+    flex-wrap: wrap;
+}
