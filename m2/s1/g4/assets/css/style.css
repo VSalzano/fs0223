@@ -261,7 +261,9 @@ main {
 }
 
 main .main-articles .trending-art {
-    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 main .main-articles .trending-art .art-title {
@@ -284,8 +286,11 @@ main .main-articles .trending-art .art-sub {
     justify-content: space-between;
 }
 
+main .main-articles .trending-art .art-txt {
+    padding-left: 0;
+}
+
 main .main-articles .trending-art .article-img {
-    position: absolute;
     top: 30px;
     right: 0;
     left: 500px;
