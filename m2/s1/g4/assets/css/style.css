@@ -196,6 +196,12 @@ main .main-articles .trending-art .art-title .about {
     opacity: 0.7;
 }
 
+main .main-articles .trending-art .art-sub {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
 main .main-articles .trending-art .article-img {
     position: absolute;
     top: 30px;
