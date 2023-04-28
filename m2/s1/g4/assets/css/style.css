@@ -266,6 +266,21 @@ main .main-articles .trending-art {
     justify-content: space-between;
 }
 
+@media screen and (min-width: 552px) {
+    main .main-articles .trending-art .art-txt {
+        width: 170px;
+    }
+
+    main .main-articles .trending-art .art-txt p {
+        width: 170px;
+        margin-right: 0;
+    }
+
+    main .main-articles .trending-art .art-txt .art-title {
+        width: 150px;
+    }
+}
+
 main .main-articles .trending-art .art-title {
     width: 350px;
 }
@@ -291,9 +306,8 @@ main .main-articles .trending-art .art-txt {
 }
 
 main .main-articles .trending-art .article-img {
-    top: 30px;
-    right: 0;
-    left: 500px;
+
+    padding: 2em 3em;
 }
 
 main .main-articles .trending-art .article-img img {
