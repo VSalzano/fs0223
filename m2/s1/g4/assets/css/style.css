@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
 
+body {
+    position: relative;
+}
+
 svg {
     width: 60vh !important;
 }
@@ -15,6 +19,9 @@ svg {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
     align-items: center;
+    position:sticky;
+    top:0;
+    z-index: 2;
 }
 
 .menu {
@@ -204,4 +211,62 @@ main .main-articles .trending-art .article-img img {
     background-color: rgba(0, 0, 0, 0.253);
     padding: 0.2em 1em;
     border-radius: 10px;
+}
+
+aside {
+    width: 30%;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sticker {
+    position: sticky;
+    top: 15vh;
+}
+
+aside .discover-more {
+    margin-bottom: 5em;
+    width: 500px;
+}
+
+aside ul {
+    list-style-type: none;
+    color:black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+aside .discover-more ul li {
+    margin: 1em;
+}
+
+aside .discover-more ul li a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.158);
+    color: #191919;
+    padding: 0.2em 1em;
+    border-radius: 20px;
+}
+
+aside h4 {
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.more a{
+    margin-left: 1em;
+    text-decoration: none;
+    color: #1a8917
+}
+
+.a-footer ul {
+    line-height: 1.8;
+}
+
+.a-footer a {
+    padding-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    color:rgba(128, 128, 128, 0.856)
 }
