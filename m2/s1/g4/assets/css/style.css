@@ -61,6 +61,12 @@ svg {
 
 }
 
+@media screen and (max-width: 552px) {
+    .topbar {
+        padding: 1em 3em;
+    }
+}
+
 .hero-section {
     display: flex;
     justify-content: space-between;
