@@ -258,6 +258,10 @@ main {
         width: 80%;
         margin: 0 auto;
     }
+
+    .main-articles {
+        margin: 0 auto;
+    }
 }
 
 main .main-articles .trending-art {
