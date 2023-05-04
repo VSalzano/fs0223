@@ -1,0 +1,18 @@
+$logo-size: 5rem;
+
+@mixin navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    height: $logo-size;
+}
+
+nav {
+    @include navbar;
+
+    ul {
+        display: flex;
+    }
+}

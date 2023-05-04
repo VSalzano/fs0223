@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+$par-font: 'Roboto', sans-serif;
+$main-text-color: #f4f4f4;
+
+$fontSizes: 2em, 3em, 4em, 5em, 6em;
+
+@each $fontSize in $fontSizes {
+  .font-#{$fontSize} {
+    font-size: $fontSize;
+  }
+};
+
+@mixin titleBig ($custom-letter-spacing) {
+	letter-spacing: $custom-letter-spacing;
+	font-family: 'Merriweather', serif;
+	color: $main-text-color;
+};
+
+.title {
+	@include titleBig(1.2)
+}
+
+.par {
+	font-family: $par-font;
+	color: $main-text-color;
+}
+
+header {
+	text-align:center;
+}

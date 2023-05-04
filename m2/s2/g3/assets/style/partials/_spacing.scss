@@ -1,0 +1,39 @@
+$paddings: 1em, 2em, 3em, 4em, 5em, 6em;
+
+@each $padding in $paddings {
+    .p-#{$padding} {
+        padding: $padding;
+      }
+    .pr-#{$padding} {
+        padding-right: $padding;
+      }
+    .pl-#{$padding} {
+        padding-left: $padding;
+      }
+    .pt-#{$padding} {
+        padding-top: $padding;
+      }
+    .pb-#{$padding} {
+        padding-bottom: $padding;
+      }
+}
+
+$margins: 1em, 2em, 3em, 4em, 5em, 6em;
+
+@each $margin in $margins {
+    .m-#{$margin} {
+        margin: $margin;
+      }
+    .mr-#{$margin} {
+        margin-right: $margin;
+    }  
+    .ml-#{$margin} {
+        margin-left: $margin;
+    }  
+    .mt-#{$margin} {
+        margin-top: $margin;
+    }  
+    .mb-#{$margin} {
+        margin-bottom: $margin;
+    }  
+}
