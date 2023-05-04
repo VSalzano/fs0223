@@ -1,11 +1,19 @@
+@mixin btnBorder {
+    border-radius: 15px;
+    border: none;
+}
+
 .first {
     background-color: $btn-first;
+    @include btnBorder;
 }
 
 .second {
     background-color: $btn-second;
+    @include btnBorder;
 }
 
 .third {
     background-color: $btn-third;
+    @include btnBorder;
 }

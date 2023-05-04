@@ -16,3 +16,13 @@ nav {
         display: flex;
     }
 }
+
+@mixin floating {
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.53);
+    border: none;
+}
+
+header {
+    @include floating;
+}

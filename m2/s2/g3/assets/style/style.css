@@ -34,14 +34,20 @@ a {
 
 .first {
   background-color: #0e6cff;
+  border-radius: 15px;
+  border: none;
 }
 
 .second {
   background-color: #ff8700;
+  border-radius: 15px;
+  border: none;
 }
 
 .third {
   background-color: #4caf50;
+  border-radius: 15px;
+  border: none;
 }
 
 .font-2em {
@@ -89,6 +95,12 @@ nav {
 }
 nav ul {
   display: flex;
+}
+
+header {
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.53);
+  border: none;
 }
 
 .p-1em {
