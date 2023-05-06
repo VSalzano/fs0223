@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+}
+
+.navbar .logo {
+  height: 3rem;
+  width: 8rem;
+}
+.navbar a {
+  color: rgb(170, 170, 170);
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: white;
+  transition: 200ms;
+}
+.navbar .tools img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.genres a {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  font-size: 0.7em;
+}
+.genres a:hover {
+  color: white;
+  transition: 200ms;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.carousel-item img {
+  height: 10vw;
+}
+
+.socials {
+  list-style-type: none;
+}
+.socials a {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-toggler {
+  background-color: rgb(197, 197, 197) !important;
+}
+
+.footer-list li a {
+  color: rgb(170, 170, 170);
+  font-size: 0.6em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-list li a:hover {
+  color: white;
+  transition: 200ms;
+}
+
+.footer-btn {
+  font-size: 0.6em;
+}
+
+.copyright {
+  font-size: 0.6em;
+}
+
+.profile-main {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.profile-title {
+  font-size: 4rem;
+}/*# sourceMappingURL=style.css.map */
