@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-right: 10px;
+            padding: 1.5em;
+        }
+
+        #save-button {
+            color: white;
+            background-color: green;
+        }
+
+        #delete-button {
+            color: white;
+            background-color: rgb(128, 0, 0);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="my-form">
+            <label for="name">Inserisci un nome:</label>
+            <input type="text" name="name" id="name-field">
+            <div>
+                <button id="save-button" type="submit">Salva in Local Storage</button>
+                <button id="delete-button">Pulisci Local Storage</button>                
+            </div>
+        </form>
+        <ul id="output-msg">
+            
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
