@@ -1,5 +1,4 @@
-const destroyCard = (btn) =>
-  btn.parentElement.parentElement.parentElement.remove();
+const destroyCard = (btn) => btn.closest(".col-12").remove();
 
 fetch("https://striveschool-api.herokuapp.com/books")
   .then((res) => {
