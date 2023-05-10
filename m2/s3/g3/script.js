@@ -1,3 +1,6 @@
+const destroyCard = (btn) =>
+  btn.parentElement.parentElement.parentElement.remove();
+
 fetch("https://striveschool-api.herokuapp.com/books")
   .then((res) => {
     if (res.ok) {
@@ -21,17 +24,14 @@ fetch("https://striveschool-api.herokuapp.com/books")
                 <p class="card-text">Price : $ ${book.price}</p>
                 <div class="d-flex justify-content-between">
                     <button class="btn btn-success">Acquista</button>
-                    <button class="btn btn-danger" onclick="destroyCard(${book.asin})   ">Scarta</button>
+                    <button class="btn btn-danger" onclick="destroyCard(this)">Scarta</button>
                 </div>
             </div>
         </div>
-
         `;
-
       mainRow.appendChild(col);
     });
   })
-
   .catch((err) => {
     console.log(err);
   });
