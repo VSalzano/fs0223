@@ -1,3 +1,6 @@
+// Il metodo "closest" accetta un selettore CSS e risale dal mio elemento fino al parent più vicino con il selettore che ho specificato (.col 12).
+// Definisco la funzione che richiamerò in onclick direttamente dentro al bottone, passandogli "this" come parametro
+
 const destroyCard = (btn) => btn.closest(".col-12").remove();
 
 fetch("https://striveschool-api.herokuapp.com/books")
