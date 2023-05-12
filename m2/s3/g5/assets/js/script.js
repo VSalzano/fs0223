@@ -20,12 +20,12 @@ fetch(PRODUCTS_API, {
     console.log(products);
     products.forEach((product) => {
       let col = document.createElement("div");
-      col.classList.add("col-12", "col-md-6", "col-lg-3", "g-4");
+      col.classList.add("col-6", "col-lg-3", "g-4", "d-flex");
       col.innerHTML = `
       <div class="card" style="">
         <img src="${product.imageUrl}" class="card-img-top w-100 h-100 p-0" alt="...">
         <div class="card-body">
-          <h5 class="card-title">${product.name}</h5>
+          <h5 class="card-title"><a href="./detail.html">${product.name}</a></h5>
           <p class="card-text">€ ${product.price}</p>
           <a href="../backoffice.html?productId=${product._id}" class="btn btn-primary">Modifica</a>
         </div>
