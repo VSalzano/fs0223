@@ -25,9 +25,12 @@ fetch(PRODUCTS_API, {
       <div class="card" style="">
         <img src="${product.imageUrl}" class="card-img-top w-100 h-100 p-0" alt="...">
         <div class="card-body">
-          <h5 class="card-title"><a href="./detail.html?productId=${product._id}">${product.name}</a></h5>
+          <h5 class="card-title">${product.name}</h5>
           <p class="card-text">€ ${product.price}</p>
-          <a href="../backoffice.html?productId=${product._id}" class="btn btn-primary">Modifica</a>
+          <div class="d-flex justify-content-between">
+            <a href="../backoffice.html?productId=${product._id}" class="btn btn-primary">Modifica</a>
+            <a href="../detail.html?productId=${product._id}" class="btn btn-success">Scopri di più</a>
+          </div>
         </div>
       </div>
       `;
