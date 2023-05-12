@@ -22,14 +22,14 @@ fetch(PRODUCTS_API, {
       let col = document.createElement("div");
       col.classList.add("col-6", "col-lg-3", "g-4", "d-flex");
       col.innerHTML = `
-      <div class="card" style="">
+      <div class="card">
         <img src="${product.imageUrl}" class="card-img-top w-100 h-100 p-0" alt="...">
-        <div class="card-body">
+        <div class="card-body bg-secondary text-light">
           <h5 class="card-title">${product.name}</h5>
           <p class="card-text">€ ${product.price}</p>
           <div class="d-flex justify-content-between">
-            <a href="../backoffice.html?productId=${product._id}" class="btn btn-primary">Modifica</a>
-            <a href="../detail.html?productId=${product._id}" class="btn btn-success">Scopri di più</a>
+            <a href="../backoffice.html?productId=${product._id}" class="btn btn-warning">Modifica</a>
+            <a href="../detail.html?productId=${product._id}" class="btn btn-danger">Scopri di più</a>
           </div>
         </div>
       </div>
