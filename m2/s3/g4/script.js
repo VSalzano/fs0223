@@ -51,7 +51,7 @@ loadBtn.addEventListener("click", () => {
               <div class="btn-group">
                 <button
                   type="button"
-                  class="btn btn-sm btn-outline-secondary"
+                  class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#staticBackdrop"
                 >
                   View
                 </button>
@@ -118,7 +118,7 @@ loadSecBtn.addEventListener("click", () => {
               <div class="btn-group">
                 <button
                   type="button"
-                  class="btn btn-sm btn-outline-secondary"
+                  class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#staticBackdrop"
                 >
                   View
                 </button>
@@ -189,7 +189,7 @@ searchBtn.addEventListener("click", (e) => {
               <div class="btn-group">
                 <button
                   type="button"
-                  class="btn btn-sm btn-outline-secondary"
+                  class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#staticBackdrop"
                 >
                   View
                 </button>
