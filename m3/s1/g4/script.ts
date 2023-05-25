@@ -31,7 +31,7 @@ class capoDiAbbigliamento{
 
 fetch('Abbigliamento.json')
 .then((res:Response) => res.json())
-.then((catalogo) => {
+.then((catalogo:capoDiAbbigliamento[]) => {
     console.log(catalogo);
     let arr:capoDiAbbigliamento[] = [];
     catalogo.forEach((vestito) => {
