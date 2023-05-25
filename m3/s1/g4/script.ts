@@ -24,8 +24,23 @@ class capoDiAbbigliamento{
         this.saldo = saldo;
     }
 
-    mostraPrezzo = ():void => {
-        let sconto:number = (this.saldo * 100) / this.prezzoivainclusa
-        console.log(`Il capo ${this.capo}, scontato del ${this.saldo}% costa ${this.prezzoivainclusa - sconto} €`)
+    mostraPrezzo():void {
+        console.log(`Il capo ${this.capo}, scontato del ${this.saldo}%, costa ${this.prezzoivainclusa*(1-this.saldo/100)} €`);
     }
 }
+
+fetch('Abbigliamento.json')
+.then((res:Response) => res.json())
+.then((catalogo) => {
+    console.log(catalogo);
+    let arr:capoDiAbbigliamento[] = [];
+    catalogo.forEach((vestito) => {
+        let abito = new capoDiAbbigliamento(vestito.id, vestito.codprod, vestito.collezione, vestito.capo, vestito.modello, vestito.quantita, vestito.colore, vestito.prezzoivainclusa, vestito.prezzoivaesclusa, vestito.disponibile, vestito.saldo)
+
+        arr.push(abito);
+    })
+
+    console.log(arr);
+
+    arr.forEach((vestito) => vestito.mostraPrezzo())
+})
