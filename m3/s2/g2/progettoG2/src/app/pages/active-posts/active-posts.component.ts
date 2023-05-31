@@ -9,10 +9,11 @@ import { PostsService } from 'src/app/posts.service';
 })
 export class ActivePostsComponent {
 
-  activePosts:Posts[] = [];
+  activePostsArr:Posts[] = [];
 
   constructor(private postsSvc: PostsService) {
-    postsSvc.getPosts()
-    .then(activePosts => this.activePosts = activePosts)
+    this.postsSvc.getPosts()
+    .then((activePosts:Posts[]) => this.activePostsArr = activePosts.filter(el => el.active == true));
   }
 }
+
