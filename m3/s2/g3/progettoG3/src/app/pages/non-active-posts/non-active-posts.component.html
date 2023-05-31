@@ -1,0 +1,8 @@
+<div class="card mb-4" *ngFor="let nonActPost of nonActivePostsArr">
+  <div class="card-header">{{ nonActPost.title }}</div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>{{ nonActPost.body }}</p>
+    </blockquote>
+  </div>
+</div>
