@@ -6,6 +6,7 @@ import { Posts } from './Models/posts'
 })
 export class PostsService {
 
+
   db:string = 'assets/db.json'
 
   constructor() { }

@@ -3,42 +3,48 @@
     "id" : "01",
     "title" : "lorem ipsum dolor sit amet",
     "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tincidunt lacus, non gravida magna. Praesent euismod ligula id tincidunt convallis.",
-    "active": true
+    "active": true,
+    "type": "news"
 
   },
   {
     "id" : "02",
     "title" : "lorem ipsum dolor sit amet",
     "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tincidunt lacus, non gravida magna. Praesent euismod ligula id tincidunt convallis.",
-    "active": false
+    "active": false,
+    "type": "politic"
 
   },
   {
     "id" : "03",
     "title" : "lorem ipsum dolor sit amet",
     "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tincidunt lacus, non gravida magna. Praesent euismod ligula id tincidunt convallis.",
-    "active": true
+    "active": true,
+    "type": "politic"
 
   },
   {
     "id" : "04",
     "title" : "lorem ipsum dolor sit amet",
     "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tincidunt lacus, non gravida magna. Praesent euismod ligula id tincidunt convallis.",
-    "active": false
+    "active": false,
+    "type": "education"
 
   },
   {
     "id" : "05",
     "title" : "lorem ipsum dolor sit amet",
     "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tincidunt lacus, non gravida magna. Praesent euismod ligula id tincidunt convallis.",
-    "active": true
+    "active": true,
+    "type": "politic"
 
   },
   {
     "id" : "06",
     "title" : "lorem ipsum dolor sit amet",
     "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tincidunt lacus, non gravida magna. Praesent euismod ligula id tincidunt convallis.",
-    "active": false
+    "active": false,
+    "type": "news"
 
   }
 ]
