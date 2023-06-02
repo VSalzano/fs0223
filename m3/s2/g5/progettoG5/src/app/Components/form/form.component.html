@@ -1,5 +1,9 @@
 <form>
-  <input type="text" />
-  <button id="add-btn">+</button>
-  <button id="cancel-btn">X</button>
+  <input
+    [(ngModel)]="todo.body"
+    type="text"
+    placeholder="Inserisci Todo"
+    name="todo-body"
+  />
+  <button id="add-btn" (click)="create()">+</button>
 </form>

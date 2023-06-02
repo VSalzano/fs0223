@@ -1,1 +1,14 @@
 <app-form> </app-form>
+<div>
+  <ul>
+    <li *ngFor="let todo of todos">
+      {{ todo.body }}
+      <button id="cancel-btn" (click)="delete(todo.id)">
+        <i class="bi bi-x-circle"></i>
+      </button>
+      <button id="cancel-btn">
+        <i class="bi bi-check2-circle"></i>
+      </button>
+    </li>
+  </ul>
+</div>

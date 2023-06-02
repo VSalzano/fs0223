@@ -5,7 +5,7 @@ export class Todo implements ITodo {
   body:string;
   completed:boolean = false;
 
-  constructor(id:number, body:string, completed:boolean) {
+  constructor(body:string, completed:boolean, id?:number) {
     this.id = id;
     this.body = body;
     this.completed = completed;

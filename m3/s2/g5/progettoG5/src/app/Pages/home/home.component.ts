@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITodo } from 'src/app/Models/itodo';
+import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
 
 @Component({
@@ -18,18 +19,22 @@ export class HomeComponent implements OnInit {
     this.getTodos();
   }
 
-    delete(id?:number) {
-      this.todosSvc.deleteTodo(id)
-      .then(res => {
-        this.getTodos();
-      })
-    }
-
   getTodos() {
     this.todosSvc.getTodos().then(res => {
       this.todos = res;
       this.loading = false;
     })
   }
+
+  delete(id?:number){
+
+    this.todosSvc.deleteTodo(id)
+    .then(res => {
+
+      this.getTodos();
+
+    })
+  }
+
 }
 

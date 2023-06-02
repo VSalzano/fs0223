@@ -1,3 +1,14 @@
 {
-  "todo" : []
+  "todo": [
+    {
+      "completed": false,
+      "body": "Fare la spesa",
+      "id": 1
+    },
+    {
+      "completed": false,
+      "body": "Spostare l'Inghilterra",
+      "id": 2
+    }
+  ]
 }
