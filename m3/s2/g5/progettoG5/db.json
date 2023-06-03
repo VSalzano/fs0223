@@ -1,13 +1,13 @@
 {
   "todo": [
     {
-      "completed": false,
+      "completed": true,
       "body": "Fare la spesa",
       "id": 1
     },
     {
-      "completed": false,
-      "body": "Spostare l'Inghilterra",
+      "completed": true,
+      "body": "Acquistare galleggiante",
       "id": 2
     }
   ]

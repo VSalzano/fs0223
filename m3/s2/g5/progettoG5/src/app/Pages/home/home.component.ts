@@ -1,5 +1,5 @@
+import { ITodo } from './../../Models/itodo';
 import { Component, OnInit } from '@angular/core';
-import { ITodo } from 'src/app/Models/itodo';
 import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
 
@@ -11,30 +11,42 @@ import { TodosService } from 'src/app/todos.service';
 export class HomeComponent implements OnInit {
 
   todos:ITodo[] = [];
+  homeTodos:ITodo[] = [];
   loading:boolean = true;
 
   constructor(private todosSvc:TodosService) {
   }
-  ngOnInit() {
+  ngOnInit():void {
     this.getTodos();
   }
 
-  getTodos() {
+  getTodos():void{
     this.todosSvc.getTodos().then(res => {
       this.todos = res;
+      this.homeTodos = this.todos.filter(todo => todo.completed == false);
       this.loading = false;
     })
   }
 
-  delete(id?:number){
+  delete(id?:number):void{
 
     this.todosSvc.deleteTodo(id)
     .then(res => {
-
       this.getTodos();
-
     })
   }
+
+  checkTodo(id:any):void{
+
+    this.todosSvc.getSingleTodo(id).then((res) => {
+      console.log(res)
+      res.completed = true;
+      this.todosSvc.updateTodo(res)
+      .then(res => console.log(res))})
+
+  }
+
+
 
 }
 

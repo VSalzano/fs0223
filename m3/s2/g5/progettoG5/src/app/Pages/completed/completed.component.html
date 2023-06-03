@@ -1,1 +1,11 @@
-<p>completed works!</p>
+<app-form> </app-form>
+<div>
+  <ul>
+    <li *ngFor="let todo of completedTodos">
+      {{ todo.body }}
+      <button id="cancel-btn" (click)="delete(todo.id)">
+        <i class="bi bi-x-circle"></i>
+      </button>
+    </li>
+  </ul>
+</div>

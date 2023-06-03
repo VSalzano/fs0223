@@ -8,8 +8,6 @@ export class TodosService {
 
   apiUrl:string = 'http://localhost:3000/todo';
 
-  allTodos:ITodo[] = [];
-
   constructor() { }
 
   getTodos(): Promise<ITodo[]> {
@@ -22,15 +20,7 @@ export class TodosService {
 
   addTodo(todo:ITodo):Promise<ITodo> {
     return fetch (this.apiUrl, {
-      method: 'post',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(todo)
-    }).then(response => response.json());
-  }
-
-  updateTodo(todo:ITodo){
-    return fetch(this.apiUrl+'/'+todo.id,{
-      method:'PUT',
+      method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(todo)
     }).then(response => response.json());
@@ -40,6 +30,14 @@ export class TodosService {
     return fetch(this.apiUrl+'/'+id,{
       method:'DELETE',
     }).then(response => response.json());
+  }
+
+  updateTodo(todo:ITodo):Promise<ITodo> {
+    return fetch (this.apiUrl+'/'+todo.id, {
+      method: 'PUT',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(todo)
+    }).then(response => response.json())
   }
 
 }

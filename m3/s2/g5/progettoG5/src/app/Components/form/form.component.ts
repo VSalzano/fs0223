@@ -9,12 +9,13 @@ import { TodosService } from 'src/app/todos.service';
 })
 export class FormComponent {
 
-  todo:Todo = new Todo('', false);
 
   constructor(private todosSvc: TodosService){}
 
+  todo:Todo = new Todo('', false);
+
   create(){
-    this.todosSvc.addTodo(this.todo)
-    .then(res => console.log(res));
+    this.todosSvc.addTodo(this.todo);
+    window.location.reload()
   }
 }
