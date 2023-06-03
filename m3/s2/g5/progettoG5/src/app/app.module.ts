@@ -8,6 +8,7 @@ import { HomeComponent } from './Pages/home/home.component';
 import { CompletedComponent } from './Pages/completed/completed.component';
 import { FormComponent } from './Components/form/form.component';
 import { FormsModule } from '@angular/forms';
+import { LoadingSpinnerComponent } from './Components/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     HomeComponent,
     CompletedComponent,
-    FormComponent
+    FormComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,

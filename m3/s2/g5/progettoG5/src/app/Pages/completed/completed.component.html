@@ -1,6 +1,6 @@
 <div>
   <h1>Cosa ho già fatto</h1>
-  <span class="loader" *ngIf="loading"></span>
+  <app-loading-spinner *ngIf="loading"></app-loading-spinner>
   <table>
     <tr *ngFor="let todo of completedTodos">
       <td id="body-td">{{ todo.body }}</td>
