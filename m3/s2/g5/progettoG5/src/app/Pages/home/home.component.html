@@ -1,6 +1,8 @@
 <app-form> </app-form>
 <div>
   <h1>Cosa resta da fare...</h1>
+  <span class="loader" *ngIf="loading"></span>
+  <div id="img1" class="img" *ngIf="loading"></div>
   <table>
     <tr *ngFor="let todo of homeTodos">
       <td id="body-td">{{ todo.body }}</td>
