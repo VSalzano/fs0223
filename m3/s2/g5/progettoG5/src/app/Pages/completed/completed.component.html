@@ -1,11 +1,15 @@
-<app-form> </app-form>
 <div>
-  <ul>
-    <li *ngFor="let todo of completedTodos">
-      {{ todo.body }}
-      <button id="cancel-btn" (click)="delete(todo.id)">
-        <i class="bi bi-x-circle"></i>
-      </button>
-    </li>
-  </ul>
+  <table>
+    <tr *ngFor="let todo of completedTodos">
+      <td id="body-td">{{ todo.body }}</td>
+      <td id="button-td">
+        <button id="cancel-btn" (click)="delete(todo.id)">
+          <i class="bi bi-x-circle"></i>
+        </button>
+        <button id="cancel-btn" (click)="uncheckTodo(todo.id)">
+          <i class="bi bi-arrow-left-circle"></i>
+        </button>
+      </td>
+    </tr>
+  </table>
 </div>

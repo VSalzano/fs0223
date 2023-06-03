@@ -34,4 +34,15 @@ export class CompletedComponent {
       this.getTodos();
     })
   }
+
+  uncheckTodo(id:any):void{
+
+    this.todosSvc.getSingleTodo(id).then((res) => {
+      console.log(res)
+      res.completed = false;
+      this.todosSvc.updateTodo(res)
+      .then(res => window.location.reload())
+    })
+
+  }
 }

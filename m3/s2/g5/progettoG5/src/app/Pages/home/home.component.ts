@@ -42,7 +42,8 @@ export class HomeComponent implements OnInit {
       console.log(res)
       res.completed = true;
       this.todosSvc.updateTodo(res)
-      .then(res => console.log(res))})
+      .then(res => window.location.reload())
+    })
 
   }
 

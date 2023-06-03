@@ -9,6 +9,11 @@
       "completed": true,
       "body": "Acquistare galleggiante",
       "id": 2
+    },
+    {
+      "completed": false,
+      "body": "Continuare a studiare Angular",
+      "id": 6
     }
   ]
 }

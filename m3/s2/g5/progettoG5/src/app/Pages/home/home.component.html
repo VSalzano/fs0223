@@ -1,14 +1,16 @@
 <app-form> </app-form>
 <div>
-  <ul>
-    <li *ngFor="let todo of homeTodos">
-      {{ todo.body }}
-      <button id="cancel-btn" (click)="delete(todo.id)">
-        <i class="bi bi-x-circle"></i>
-      </button>
-      <button id="check-btn" (click)="checkTodo(todo.id)">
-        <i class="bi bi-check2-circle"></i>
-      </button>
-    </li>
-  </ul>
+  <table>
+    <tr *ngFor="let todo of homeTodos">
+      <td id="body-td">{{ todo.body }}</td>
+      <td id="button-td">
+        <button id="cancel-btn" (click)="delete(todo.id)">
+          <i class="bi bi-x-circle"></i>
+        </button>
+        <button id="cancel-btn" (click)="checkTodo(todo.id)">
+          <i class="bi bi-check-circle"></i>
+        </button>
+      </td>
+    </tr>
+  </table>
 </div>
