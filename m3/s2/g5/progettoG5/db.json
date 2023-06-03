@@ -14,6 +14,31 @@
       "completed": false,
       "body": "Continuare a studiare Angular",
       "id": 6
+    },
+    {
+      "completed": false,
+      "body": "Spostare l'Inghilterra",
+      "id": 7
+    },
+    {
+      "completed": false,
+      "body": "Guardare film al contrario",
+      "id": 8
+    },
+    {
+      "completed": false,
+      "body": "Osservare spaghetti",
+      "id": 9
+    },
+    {
+      "completed": true,
+      "body": "Cantare nel comune di Atripalda (AV)",
+      "id": 10
+    },
+    {
+      "completed": false,
+      "body": "Catturare almeno 20 pokémon",
+      "id": 11
     }
   ]
 }
