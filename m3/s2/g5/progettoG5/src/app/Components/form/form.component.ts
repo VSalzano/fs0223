@@ -5,17 +5,17 @@ import { TodosService } from 'src/app/todos.service';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['./form.component.scss'],
 })
 export class FormComponent {
+  constructor(private todosSvc: TodosService) {}
 
+  todo: Todo = new Todo('', false);
 
-  constructor(private todosSvc: TodosService){}
-
-  todo:Todo = new Todo('', false);
-
-  create(){
-    this.todosSvc.addTodo(this.todo);
-    window.location.reload()
+  create() {
+    if (this.todo.body.length > 0) {
+      this.todosSvc.addTodo(this.todo);
+      window.location.reload();
+    }
   }
 }
