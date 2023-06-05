@@ -1,20 +1,17 @@
 <div class="container">
   <div class="row">
+    <h1>Liked photos: {{ likedPhotos.length }}</h1>
     <div
-      class="card col-2 g-3 me-2"
+      class="card col-2 g-3 me-2 d-flex flex-column justify-content-between"
       style="width: 18rem"
       *ngFor="let photo of photosArr"
     >
       <img src="{{ photo.thumbnailUrl }}" class="card-img-top" />
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+        <h5 class="card-title">{{ photo.title }}</h5>
         <div class="d-flex justify-content-between">
-          <a href="#" class="btn btn-danger">Elimina</a>
-          <a href="#" class="btn btn-success">Mi piace</a>
+          <a class="btn btn-danger" (click)="deletePhoto(photo)">Elimina</a>
+          <a class="btn btn-success" (click)="like(photo)">Mi piace</a>
         </div>
       </div>
     </div>
