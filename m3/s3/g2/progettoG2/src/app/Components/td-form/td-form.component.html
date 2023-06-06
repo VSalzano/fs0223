@@ -56,8 +56,9 @@
         max="10"
         class="form-control mb-3"
         name="enemy"
+        #enemy="ngModel"
       />
-      <p class="alert alert-danger" *ngIf="power.invalid">
+      <p class="alert alert-danger" *ngIf="enemy.invalid">
         Nome nemico troppo lungo
       </p>
 
