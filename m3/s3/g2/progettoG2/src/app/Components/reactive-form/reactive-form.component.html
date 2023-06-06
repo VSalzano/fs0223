@@ -1,1 +1,34 @@
-<p>reactive-form works!</p>
+<div class="container">
+  <h2 class="text-center my-5">Reactive form hero</h2>
+  <form [formGroup]="form">
+    <div formGroupName="authData" class="form-row row justify-content-center">
+      <div class="form-group col-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Nome"
+          cormControlName="name"
+        />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Alter Ego"
+          cormControlName="alterego"
+        />
+
+        <div formArrayName="powers">
+          <h5>Poteri</h5>
+          <button class="btn btn-warning" (click)="addPower()">
+            Aggiungi Poteri
+          </button>
+          <div
+            class="form-group"
+            *ngFor="let power of getPowers(); let i = index"
+          >
+            <input type="text" class="form-control" [formControlName]="i" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
