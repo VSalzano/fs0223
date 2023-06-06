@@ -16,18 +16,7 @@
           cormControlName="alterego"
         />
 
-        <div formArrayName="powers">
-          <h5>Poteri</h5>
-          <button class="btn btn-warning" (click)="addPower()">
-            Aggiungi Poteri
-          </button>
-          <div
-            class="form-group"
-            *ngFor="let power of getPowers(); let i = index"
-          >
-            <input type="text" class="form-control" [formControlName]="i" />
-          </div>
-        </div>
+        <button [disabled]="form.invalid" class="btn btn-success">Invia</button>
       </div>
     </div>
   </form>
