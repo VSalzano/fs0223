@@ -1,0 +1,84 @@
+<div class="row justify-content-center">
+  <div class="col-5">
+    <h2 class="mb-5">TD form hero</h2>
+
+    <form (ngSubmit)="submit(f)" #f="ngForm">
+      <label for="name">Nome</label>
+      <input
+        type="text"
+        ngModel
+        required
+        class="form-control mb-3"
+        name="name"
+        #name="ngModel"
+      />
+      <p class="alert alert-danger" *ngIf="name.invalid && name.touched">
+        Nome obbligatorio
+      </p>
+
+      <label for="alter-ego">Alter Ego</label>
+      <input
+        type="text"
+        ngModel
+        required
+        class="form-control mb-3"
+        name="alterego"
+        #alterego="ngModel"
+      />
+      <p
+        class="alert alert-danger"
+        *ngIf="alterego.invalid && alterego.touched"
+      >
+        Alter Ego obbligatorio
+      </p>
+
+      <label for="power">Superpotere</label>
+      <select
+        class="form-select mb-3"
+        ngModel
+        name="power"
+        required
+        #power="ngModel"
+      >
+        <option>opzione1</option>
+        <option>opzione2</option>
+        <option>opzione3</option>
+        <option>opzione4</option>
+      </select>
+      <p class="alert alert-danger" *ngIf="power.invalid && power.touched">
+        Scegli potere
+      </p>
+
+      <label for="enemy">Nemico</label>
+      <input
+        type="text"
+        ngModel
+        max="10"
+        class="form-control mb-3"
+        name="enemy"
+      />
+      <p class="alert alert-danger" *ngIf="power.invalid">
+        Nome nemico troppo lungo
+      </p>
+
+      <label for="planet">Pianeta</label>
+      <input
+        type="text"
+        ngModel
+        required
+        class="form-control mb-3"
+        name="planet"
+        #planet="ngModel"
+        min="5"
+      />
+      <p class="alert alert-danger" *ngIf="planet.invalid && planet.touched">
+        Nome pianeta obbligatorio
+      </p>
+
+      <label for="weakness">Debolezza</label>
+      <input type="text" ngModel class="form-control mb-3" name="weakness" />
+
+      <button class="btn btn-success px-3 py-2">Crea</button>
+    </form>
+  </div>
+</div>
