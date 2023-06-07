@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FavoritesComponent } from './favorites.component';
 import { ErrorsInterceptor } from './errors.interceptor';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FavoritesComponent
+  declarations: [AppComponent, FavoritesComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorsInterceptor,
+      multi: true,
+    },
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule
-  ],
-  providers: [{
-    provide:HTTP_INTERCEPTORS,
-    useClass:ErrorsInterceptor,
-    multi:true
-  }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
