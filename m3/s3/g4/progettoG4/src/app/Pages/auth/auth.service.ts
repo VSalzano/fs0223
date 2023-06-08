@@ -25,8 +25,15 @@ export class AuthService {
   }
 
   login(user: LoginUser) {
-    return this.http
-      .post<IAccessData>(environment.logUrl, user)
-      .pipe(tap((data) => {}));
+    return this.http.post<IAccessData>(environment.logUrl, user).pipe(
+      tap((data) => {
+        this.authSubject.next(data);
+        localStorage.setItem('user', JSON.stringify(data));
+
+        const expDate = this.jwtHelper.getTokenExpirationDate(
+          data.accessToken
+        ) as Date;
+      })
+    );
   }
 }
