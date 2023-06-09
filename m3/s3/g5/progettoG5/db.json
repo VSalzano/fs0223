@@ -20,6 +20,14 @@
       "name": "Winifred Schwartz",
       "surname": "Vang",
       "id": 3
+    },
+    {
+      "email": "vahonibufe@mailinator.com",
+      "password": "$2a$10$.Ak4XsyW5AlVaXWpgwphkeoD3kjuSVXUh28DpYbt4aASxWHoDHWqa",
+      "name": "Edan Conrad",
+      "surname": "Acevedo",
+      "id": 4
     }
-  ]
+  ],
+  "posts": []
 }
