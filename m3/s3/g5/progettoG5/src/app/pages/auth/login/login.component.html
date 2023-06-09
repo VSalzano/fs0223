@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h2 class="my-4">Sign in</h2>
+      <form #f="ngForm" (ngSubmit)="sub(f)">
+        <div class="mb-3">
+          <label for="userEmail" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            [ngClass]="{ 'is-valid': userEmail.valid && userEmail.touched }"
+            id="userEmail"
+            name="email"
+            ngModel
+            required
+            #userEmail="ngModel"
+          />
+          <p
+            *ngIf="userEmail.invalid && userEmail.touched"
+            class="alert alert-danger p-2 mt-2"
+          >
+            This field is required.
+          </p>
+        </div>
+        <div class="mb-3">
+          <label for="userPass" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            [ngClass]="{ 'is-valid': userPass.valid && userPass.touched }"
+            id="userPass"
+            name="password"
+            ngModel
+            required
+            #userPass="ngModel"
+          />
+          <p
+            *ngIf="userPass.invalid && userPass.touched"
+            class="alert alert-danger p-2 mt-2"
+          >
+            This field is required.
+          </p>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!f.valid">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "vicobyly@mailinator.com",
+      "password": "$2a$10$8ES2roc7oWC0oTYgedPi7OuiTIQCy6S1HEcw33CTnfnf3chAhsHrG",
+      "name": "Brody Gutierrez",
+      "surname": "Johnson",
+      "id": 1
+    },
+    {
+      "email": "duxido@mailinator.com",
+      "password": "$2a$10$examBx93uZWr.ruBT5bevu19RWduA4O1/m9ELm5hnHl7JXotxZkB2",
+      "name": "Demetria Acevedo",
+      "surname": "Sherman",
+      "id": 2
+    }
+  ]
+}
