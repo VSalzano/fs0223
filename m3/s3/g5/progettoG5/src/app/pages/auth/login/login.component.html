@@ -15,12 +15,6 @@
             required
             #userEmail="ngModel"
           />
-          <p
-            *ngIf="userEmail.invalid && userEmail.touched"
-            class="alert alert-danger p-2 mt-2"
-          >
-            This field is required.
-          </p>
         </div>
         <div class="mb-3">
           <label for="userPass" class="form-label">Password</label>
@@ -34,12 +28,6 @@
             required
             #userPass="ngModel"
           />
-          <p
-            *ngIf="userPass.invalid && userPass.touched"
-            class="alert alert-danger p-2 mt-2"
-          >
-            This field is required.
-          </p>
         </div>
         <button type="submit" class="btn btn-primary" [disabled]="!f.valid">
           Submit
