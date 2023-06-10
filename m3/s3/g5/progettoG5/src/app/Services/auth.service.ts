@@ -33,10 +33,10 @@ export class AuthService {
         this.authSubject.next(data);
         localStorage.setItem('user', JSON.stringify(data));
 
-        const expDate = this.jwtHelper.getTokenExpirationDate(
-          data.accessToken
-        ) as Date;
-        this.autoLogout(expDate);
+        // const expDate = this.jwtHelper.getTokenExpirationDate(
+        //   data.accessToken
+        // ) as Date;
+        // this.autoLogout(expDate);
       }),
       catchError(this.errors)
     );
@@ -51,6 +51,8 @@ export class AuthService {
     if (this.jwtHelper.isTokenExpired(user.accessToken)) {
       return;
     }
+
+    this.authSubject.next(user);
   }
 
   logout() {
@@ -62,12 +64,12 @@ export class AuthService {
     }
   }
 
-  autoLogout(expDate: Date) {
-    const expMs = expDate.getTime() - new Date().getTime();
-    this.authLogoutTimer = setTimeout(() => {
-      this.logout();
-    }, expMs);
-  }
+  // autoLogout(expDate: Date) {
+  //   const expMs = expDate.getTime() - new Date().getTime();
+  //   this.authLogoutTimer = setTimeout(() => {
+  //     this.logout();
+  //   }, expMs);
+  // }
 
   errors(err: any) {
     switch (err.error) {

@@ -3,15 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-
+import { FormsModule } from '@angular/forms';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
-  declarations: [
-    DashboardComponent
-  ],
-  imports: [
-    CommonModule,
-    DashboardRoutingModule
-  ]
+  declarations: [DashboardComponent, AddProductComponent],
+  imports: [CommonModule, DashboardRoutingModule, FormsModule],
 })
-export class DashboardModule { }
+export class DashboardModule {
+  constructor() {}
+}

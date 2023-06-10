@@ -29,5 +29,18 @@
       "id": 4
     }
   ],
-  "posts": []
+  "products": [
+    {
+      "name": "Tekken 3",
+      "imageUrl": "https://m.media-amazon.com/images/I/51hVGNhU-CL._AC_UF1000,1000_QL80_.jpg",
+      "price": 20,
+      "id": 1
+    },
+    {
+      "name": "Resident Evil 2",
+      "imageUrl": "https://m.media-amazon.com/images/I/51AKD5VWJEL._AC_UF1000,1000_QL80_.jpg",
+      "price": 12,
+      "id": 2
+    }
+  ]
 }

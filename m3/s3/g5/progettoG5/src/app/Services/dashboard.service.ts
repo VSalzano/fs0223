@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
-import { Ipost } from '../Models/ipost';
+import { IProduct } from '../Models/IProduct';
 
 @Injectable({
   providedIn: 'root',
@@ -10,22 +10,25 @@ export class DashboardService {
   constructor(private http: HttpClient) {}
 
   getAll() {
-    return this.http.get<Ipost[]>(environment.postsUrl);
+    return this.http.get<IProduct[]>(environment.productsUrl);
   }
 
   getSinglePost(id: number) {
-    return this.http.get<Ipost>(`${environment.postsUrl}/${id}`);
+    return this.http.get<IProduct>(`${environment.productsUrl}/${id}`);
   }
 
-  sharePost(data: Partial<Ipost>) {
-    return this.http.post<Ipost>(`${environment.postsUrl}`, data);
+  newProduct(data: Partial<IProduct>) {
+    return this.http.post<IProduct>(`${environment.productsUrl}`, data);
   }
 
-  put(data: Partial<Ipost>) {
-    return this.http.put<Ipost>(`${environment.postsUrl}/${data.id}`, data);
+  put(data: Partial<IProduct>) {
+    return this.http.put<IProduct>(
+      `${environment.productsUrl}/${data.id}`,
+      data
+    );
   }
 
   delete(id: number) {
-    return this.http.delete<Ipost>(`${environment.postsUrl}/${id}`);
+    return this.http.delete<IProduct>(`${environment.productsUrl}/${id}`);
   }
 }

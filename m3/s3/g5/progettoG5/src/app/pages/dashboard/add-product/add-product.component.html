@@ -1,0 +1,24 @@
+<form>
+  <label for="name">Product name</label>
+  <input
+    type="text"
+    class="form-control"
+    name="name"
+    [(ngModel)]="product.name"
+  />
+  <label for="price">Price</label>
+  <input
+    type="number"
+    class="form-control"
+    name="price"
+    [(ngModel)]="product.price"
+  />
+  <label for="img">Product Image Url</label>
+  <input
+    type="text"
+    class="form-control"
+    name="img"
+    [(ngModel)]="product.imageUrl"
+  />
+  <button class="btn btn-primary" (click)="create()">Add product</button>
+</form>
