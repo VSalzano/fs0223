@@ -13,7 +13,7 @@ export class DashboardService {
     return this.http.get<IProduct[]>(environment.productsUrl);
   }
 
-  getSinglePost(id: number) {
+  getSingleProduct(id: number) {
     return this.http.get<IProduct>(`${environment.productsUrl}/${id}`);
   }
 

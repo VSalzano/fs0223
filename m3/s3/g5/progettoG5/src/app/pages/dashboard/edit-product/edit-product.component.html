@@ -1,0 +1,17 @@
+<form>
+  <input
+    type="text"
+    class="form-control"
+    name="name"
+    [(ngModel)]="product.name"
+  />
+
+  <input
+    type="number"
+    class="form-control"
+    name="price"
+    [(ngModel)]="product.price"
+  />
+
+  <button class="btn btn-primary" (click)="edit()">Edit Product</button>
+</form>

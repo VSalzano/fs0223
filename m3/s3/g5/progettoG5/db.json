@@ -49,12 +49,6 @@
       "id": 4
     },
     {
-      "name": "Gran Turismo 2",
-      "imageUrl": "https://www.retroplace.com/pics/ps/packshots/57144--gran-turismo-2.png",
-      "price": 23,
-      "id": 5
-    },
-    {
       "name": "Tombi",
       "imageUrl": "https://www.ilbardelfumetto.com/media/articoli/1468/23_13860025662751.jpg",
       "price": 12,
@@ -65,6 +59,12 @@
       "imageUrl": "https://ae01.alicdn.com/kf/A1df35da0f09f451eb0862259542a933dw/Spyro-il-drago-PS1-chip-CD.jpg",
       "price": 32,
       "id": 7
+    },
+    {
+      "name": "The legend of Dragoon",
+      "imageUrl": "https://www.retroplace.com/pics/ps/packshots/59854--the-legend-of-dragoon.png",
+      "price": 32,
+      "id": 8
     }
   ]
 }

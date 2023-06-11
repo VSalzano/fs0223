@@ -16,6 +16,7 @@ export class AddProductComponent {
   create() {
     this.dashboardSvc.newProduct(this.product).subscribe((data: Product) => {
       this.productArr.push(data);
+      window.location.reload();
     });
   }
 }
