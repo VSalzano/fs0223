@@ -16,7 +16,7 @@
         <p class="card-text">€ {{ product.price }}</p>
         <button
           class="btn btn-primary me-3"
-          [routerLink]="['dashboard/edit-product']"
+          [routerLink]="['/pages', 'dashboard', 'edit', product.id]"
         >
           Edit
         </button>
