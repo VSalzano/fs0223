@@ -19,7 +19,10 @@ export class AuthService {
 
   user$ = this.authSubject.asObservable();
   isLoggedIn$ = this.user$.pipe(map((data) => Boolean(data)));
-  constructor(private http: HttpClient, private router: Router) {}
+
+  constructor(private http: HttpClient, private router: Router) {
+    this.restoreUser();
+  }
 
   register(user: IRegister) {
     return this.http

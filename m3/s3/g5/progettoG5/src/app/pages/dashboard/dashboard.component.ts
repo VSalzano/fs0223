@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Product } from 'src/app/Models/Product';
+import { AuthService } from 'src/app/Services/auth.service';
 import { DashboardService } from 'src/app/Services/dashboard.service';
 
 @Component({
@@ -10,10 +11,15 @@ import { DashboardService } from 'src/app/Services/dashboard.service';
 export class DashboardComponent {
   productsArr: Product[] = [];
 
-  constructor(private dashboardSvc: DashboardService) {}
+  constructor(
+    private dashboardSvc: DashboardService,
+    private authSvc: AuthService
+  ) {}
 
   ngOnInit() {
-    this.dashboardSvc.getAll().subscribe((data) => (this.productsArr = data));
+    this.dashboardSvc.getAll().subscribe((data) => {
+      this.productsArr = data;
+    });
   }
 
   delete(id: number | undefined) {
