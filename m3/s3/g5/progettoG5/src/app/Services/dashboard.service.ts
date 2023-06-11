@@ -28,7 +28,7 @@ export class DashboardService {
     );
   }
 
-  delete(id: number) {
+  delete(id: number | undefined) {
     return this.http.delete<IProduct>(`${environment.productsUrl}/${id}`);
   }
 }

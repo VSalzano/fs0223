@@ -15,4 +15,12 @@ export class DashboardComponent {
   ngOnInit() {
     this.dashboardSvc.getAll().subscribe((data) => (this.productsArr = data));
   }
+
+  delete(id: number | undefined) {
+    this.dashboardSvc.delete(id).subscribe((data) => {
+      console.log(data);
+      let index = this.productsArr.findIndex((p) => p.id == id);
+      this.productsArr.splice(index, 1);
+    });
+  }
 }

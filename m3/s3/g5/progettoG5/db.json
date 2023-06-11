@@ -32,15 +32,15 @@
   "products": [
     {
       "name": "Tekken 3",
-      "imageUrl": "https://m.media-amazon.com/images/I/51hVGNhU-CL._AC_UF1000,1000_QL80_.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Tekken3Box.jpg/220px-Tekken3Box.jpg",
       "price": 20,
       "id": 1
     },
     {
-      "name": "Resident Evil 2",
-      "imageUrl": "https://m.media-amazon.com/images/I/51AKD5VWJEL._AC_UF1000,1000_QL80_.jpg",
-      "price": 12,
-      "id": 2
+      "name": "Final Fantasy IX",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/51/Ffixbox.jpg",
+      "price": 34,
+      "id": 3
     }
   ]
 }

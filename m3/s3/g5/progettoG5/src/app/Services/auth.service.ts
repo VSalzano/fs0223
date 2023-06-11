@@ -33,10 +33,10 @@ export class AuthService {
         this.authSubject.next(data);
         localStorage.setItem('user', JSON.stringify(data));
 
-        // const expDate = this.jwtHelper.getTokenExpirationDate(
-        //   data.accessToken
-        // ) as Date;
-        // this.autoLogout(expDate);
+        const expDate = this.jwtHelper.getTokenExpirationDate(
+          data.accessToken
+        ) as Date;
+        this.autoLogout(expDate);
       }),
       catchError(this.errors)
     );
@@ -58,18 +58,18 @@ export class AuthService {
   logout() {
     this.authSubject.next(null);
     localStorage.removeItem('user');
-    this.router.navigate(['/login']);
+    this.router.navigate(['pages/auth']);
     if (this.authLogoutTimer) {
       clearTimeout(this.authLogoutTimer);
     }
   }
 
-  // autoLogout(expDate: Date) {
-  //   const expMs = expDate.getTime() - new Date().getTime();
-  //   this.authLogoutTimer = setTimeout(() => {
-  //     this.logout();
-  //   }, expMs);
-  // }
+  autoLogout(expDate: Date) {
+    const expMs = expDate.getTime() - new Date().getTime();
+    this.authLogoutTimer = setTimeout(() => {
+      this.logout();
+    }, expMs);
+  }
 
   errors(err: any) {
     switch (err.error) {
